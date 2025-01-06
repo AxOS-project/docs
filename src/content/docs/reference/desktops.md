@@ -22,19 +22,16 @@ As it is a very known and active desktop environement, you can find everything y
 
 ## Calla
 
-Calla (made by [Stardust-kyun](https://github.com/Stardust-kyun)) is the second desktop environment for AxOS. It is a lightweight desktop environment. It is the most resource-efficient desktop environment of the 3, but it is also the hardest to use.
+Calla (made by [Stardust-kyun](https://github.com/Stardust-kyun)) is the second desktop environment for AxOS. It is a lightweight and ressource efficient desktop environment. 
 
-It is a tiling window manager, so you can manage your windows with a keyboard. It is based on the AwesomeWM window manager, so you can customize it if you know how to code 
-with Lua. 
+Calla is a tiling window manager, so you can manage your windows with a keyboard. It is also better if used with keybindings, so you can manage your windows with a keyboard. You can find them by pressing `Super + F1`. If you need, you can change some settings (including keybindings) by editing the `/usr/share/calla/desktop/config/bind.lua` file.
 
-The desktop uses a lot of keybindings, so you can manage your windows with a keyboard. You can find them by pressing `Super + F1`. If you need, you can change them by editing the `.config/awesome/config/bind.lua` file. 
-
-![Calla](../../../assets/desktops/calla.jpg) 
+![Calla](../../../assets/desktops/calla.png)  
 
 | Pros               | Cons                                |
 | ------------------ | ----------------------------------- |
 | Lightweight        | Hard to (fully) use                 |
-| Tiling             | No graphical configuration tool     |
+| Tiling             | Less stable than Plasma             |
 | Resource-efficient | Less features than other desktops   |
 
 ## Hyprland
