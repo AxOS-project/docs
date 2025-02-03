@@ -9,7 +9,7 @@ So, you are ready to install AxOS? Great! This guide will help you to install Ax
 ## Prerequisites
 ### Required
 
-| Component | Plasma | Calla | Hyprland |
+| Component | Plasma | Calla | Sleex |
 |-----------|--------|--------|-----------|
 | CPU | 64-bit (x86_64) | 64-bit (x86_64) | 64-bit (x86_64) |
 | RAM | 4GB | 2GB | 4GB |
@@ -17,7 +17,7 @@ So, you are ready to install AxOS? Great! This guide will help you to install Ax
 
 ### Recommended
 
-| Component | Plasma | Calla | Hyprland |
+| Component | Plasma | Calla | Sleex |
 |-----------|--------|--------|-----------|
 | RAM | 8GB | 4GB | 8GB |
 | Disk Space | 50GB | 20GB | 40GB |
@@ -70,7 +70,7 @@ The different steps are:
 - Select the keyboard layout
 - Create the user (username, password, admin rights, etc.)
 - Select the disk to install AxOS on
-- Select the desktop environment (Plasma, Calla, or Hyprland)
+- Select the desktop environment (Plasma, Calla, or Sleex)
 - Select the kernel (Linux or Linux-zen)
 - Miscellaneous settings (NVidia drivers, hostname, etc.)
 - Recap and install

@@ -34,16 +34,16 @@ Calla is a tiling window manager, so you can manage your windows with a keyboard
 | Tiling             | Less stable than Plasma             |
 | Resource-efficient | Less features than other desktops   |
 
-## Hyprland
+## Sleex
 
-Hyprland is the third desktop environment for AxOS. It is the most aesthetic and feature-rich desktop environment of the 3. It has a lot of features, smooth animations and a lot of cool stuff, but it is also the least stable.
+Sleex (based on Hyprland) is the third desktop environment for AxOS. It is the most aesthetic and feature-rich desktop environment of the 3. It has a lot of features, smooth animations and a lot of cool stuff, but it is also the least stable.
 
-Like Calla, it is a tiling window manager, so you can manage your windows with a keyboard. It is also better if used with keybindings, so you can manage your windows with a keyboard. You can find them by pressing `Super + F1`. If you need, you can change some settings (including keybindings) by editing files in  `.config/hypr/hyprland/` folder. You can change the wallpaper by pressing `Ctrl + Super + T`.
+Like Calla, it is a tiling window manager, so you can manage your windows with a keyboard. It is also better if used with keybindings, so you can manage your windows with a keyboard. You can find them by pressing `Super + F1`. If you need, you can change some settings (including keybindings) by editing files in  `.config/hypr/hyprland/` folder. You can change the wallpaper by pressing `Super + T`.
 
 **By default, the keyboard layout is set to US QWERTY, no matter what you chosed in the installation. You can change it by editing the `.config/hypr/hyprland/general.conf` file.**
 
-![Hyprland](../../../assets/desktops/hypr1.png)
-![Hyprland](../../../assets/desktops/hypr2.png)
+![Sleex](../../../assets/desktops/hypr1.png)
+![Sleex](../../../assets/desktops/hypr2.png)
 
 | Pros               | Cons                                |
 | ------------------ | ----------------------------------- |

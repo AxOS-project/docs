@@ -19,9 +19,9 @@ Calla has no graphical configuration tool for the system itself. You should ther
 some elements of Calla itself. You can access it by clicking the **gear** icon in the app menu.
 
 
-### On Hyprland
+### On Sleex
 
-Hyprland has a graphical configuration app. You can access it by clicking on the **Settings** icon in the right panel, by pressing **Super + I** or by searching for **Settings** in the app menu.
+Sleex has a graphical configuration app. You can access it by clicking on the **Settings** icon in the right panel, by pressing **Super + I** or by searching for **Settings** in the app menu.
 
 > Note that some elements of the app (such as the wallpaper) are not working because it uses the GNOME library. It will be fixed in the future.
 
