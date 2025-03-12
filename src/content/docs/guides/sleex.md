@@ -94,7 +94,7 @@ Here are the built-in keybinds:
 | `Ctrl + Super + F2` | Change bar type |
 | `Super` | Open the overview / launcher |
 | `Super + KP_left` | Open left panel |
-| `Super + KP_right` | Open right panel |
+| `Super + KP_down` | Open the dashboard |
 | `Super + T` | Change the wallpaper |
 | `Super + F1` | Show keybinds |
 | `Super + M` | Toggle music controls |
@@ -126,19 +126,17 @@ The bar is the top bar of Sleex. Several modules can be found on it.
 |-------------|------------|
 | The Title module shows the name of the current focused window. The top part is the name of the process and the big bottom part is the title of the window. Click on this module to open the left panel. | ![Title](../../../assets/barWidget/title.png) |
 | The monitoring module shows the CPU usage, RAM usage and CPU temperature. | ![Monitoring](../../../assets/barWidget/monitoring.png) |
-| The Music module shows the current song playing. Left-click to open the music popup, right-click to skip to the next song, middle-click to pause/play. | ![Music](../../../assets/barWidget/music.png) |
 | The Workspace module shows the workspaces (wow, what a surprise). The focused workspace is highlighted. Used workspaces are shown in white, unused workspaces are shown in grey. Click on a workspace to switch to it. You can also scroll to change workspace. | ![Workspace](../../../assets/barWidget/workspace.png) |
-| The Time Date module shows the current time and date. Click on it to open the right panel. | ![Time Date](../../../assets/barWidget/timeDate.png) |
-| The Weather module shows the current weather of your location based on your public IP. Left-click to open the Right Panel. | ![Weather](../../../assets/barWidget/weather.png) |
-| The system trays and system icons are shown in the right part of the bar. Click to open the right panel. | ![System Tray](../../../assets/barWidget/systemTray.png) |
+| The Time Date module shows the current time and date. Click on it to open the dashboard. | ![Time Date](../../../assets/barWidget/timeDate.png) |
+| The system trays and system icons are shown in the right part of the bar. Click to open the dashboard. | ![System Tray](../../../assets/barWidget/systemTray.png) |
 
 ### Left Panel
 
 The left panel is a widget with several modules. You can open it by clicking on the Title module in the bar, or by pressing `Super + KP_left`.
 
-Two tabs are available: API and Tools.
+Two tabs are available: API and Updates.
 
-![Left Panel](../../../assets/leftPanel/leftPanel.png)
+![Left Panel](../../../assets/leftPanel/L-panel.png)
 
 #### API
 
@@ -162,36 +160,27 @@ the `/model` command will show you the current model and the `/clear` command wi
 
 Note that the chat supports markdown (color preview, code blocks, etc). You can try by typing `/test`.
 
-#### Tools
+#### Updates
 
-In the Tools tab, you can find several tools. New tools will come in the future. If you have an idea for a tool, you can suggest it. 
-
-The current tools are:
-
-| Description | Screenshot |
-|-------------|------------|
-| A color picker. Click on a color to copy it to the clipboard. | ![Color Picker](../../../assets/leftPanel/colorPicker.png) |
-| A music control. You can play/pause, skip to the next song and go back to the previous song. | ![Music Control](../../../assets/leftPanel/musicControl.png) |
-| A quote provider (powered by https://quotes-api-self.vercel.app/quote). | ![Quote](../../../assets/leftPanel/quote.png) |
-| A simple timer with a start, stop and reset button. | ![Timer](../../../assets/leftPanel/timer.png) |
+The Updates tab shows the latest updates of Sleex. The 5 last commits are shown. If a update is available, you can click on the "Update" button to update Sleex.
 
 
-### Right Panel
+### Dashboard
 
-The right panel is a widget with several modules. You can open it by clicking on the right modules of the bar, or by pressing `Super + KP_right`.
+The dashboard is a widget with several modules. You can open it by clicking on the Time Date module in the bar, or by pressing `Super + KP_down`.
 
-This panel is mainly used for settings. You can find the following modules:
+![Dashboard](../../../assets/dashboard/dash.png)
 
-| Description | Screenshot |
-|-------------|------------|
-| The quick toggle buttons allow you to quickly enable or disable some features. Default buttons are: Wi-Fi, Bluetooth, Night Mode, Keep Awake (don't lock screen). | ![Quick Toggle](../../../assets/rightPanel/quickToggles.png) |
-| The panel has multiple tabs. The tab selector is here to switch between the tabs. | ![Tab Selector](../../../assets/rightPanel/tabSelector.png) |
-| The notification center shows the notifications. You can also click on Clear and "Do not disturb" to clear the notifications and enable the do not disturb mode. | ![Notification Center](../../../assets/rightPanel/notificationCenter.png) |
-| The audio control module allows you to change the volume of each apps and the audio output/input. | ![Audio Control](../../../assets/rightPanel/audioControl.png) |
-| The bluetooth module allows you to manage your paired devices. To pair a new device, click on the "more" button. | ![Bluetooth](../../../assets/rightPanel/bluetoothControl.png) |
-| The Wi-Fi module allows you to connect to a Wi-Fi network. Simple, isn't it? | ![Wi-Fi](../../../assets/rightPanel/wifiMenu.png) |
-| The Calendar module shows the current month and day. | ![Calendar](../../../assets/rightPanel/calendar.png) |
-| The TODO module allows you to create a TODO list. | ![TODO](../../../assets/rightPanel/todo.png) |
+| Description |
+|-------------|
+| The quick toggle buttons allow you to quickly enable or disable some features. Default buttons are: Wi-Fi, Bluetooth, Night Mode, Keep Awake (don't lock screen).|
+| The setting section has multiple tabs: audio, bluetooth, wifi and quick settings (look and feel settings)|
+| The notification center shows the notifications. You can also click on Clear and "Do not disturb" to clear the notifications and enable the do not disturb mode. |
+| The Calendar module shows the current month and day. |
+| The TODO module allows you to create a TODO list. |
+| The Weather module shows the current weather on your lcoation (based on your IP). |
+| The music module shows the current song playing. You can play/pause, skip to the next song and go back to the previous song. |
+| The quote module shows a random quote. |
 
 The last tab is particular. The "Live config" tab has a lot of options. No need to explain them all, you can hover over them to see what they do.
 
