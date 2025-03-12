@@ -6,8 +6,8 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://www.axos-project.com/docs",
-  base: "",
+  site: "https://www.axos-project.com/",
+  base: "/docs",
   integrations: [
     starlight({
       title: "AxOS Docs",
