@@ -43,9 +43,10 @@ Like Calla, it is a tiling window manager, so you can manage your windows with a
 **By default, the keyboard layout is set to US QWERTY, no matter what you chosed in the installation. You can change it by editing the `.config/hypr/hyprland/general.conf` file.**
 
 ![Sleex](../../../assets/desktops/sleex1.png)
-![Sleex](../../../assets/desktops/sleex2.png)
+![Sleex](../../../assets/desktops/sleex2.gif)
 ![Sleex](../../../assets/desktops/sleex3.png)
-![Sleex](../../../assets/desktops/sleex4.png)
+![Sleex](../../../assets/desktops/sleex4.gif)
+![Sleex](../../../assets/desktops/sleex5.gif)
 
 | Pros               | Cons                                |
 | ------------------ | ----------------------------------- |
