@@ -136,7 +136,7 @@ The left panel is a widget with several modules. You can open it by clicking on 
 
 Two tabs are available: API and Updates.
 
-![Left Panel](../../../assets/leftPanel/L-panel.png)
+![Left Panel](../../../assets/leftPanel/sleex_sideleft.gif)
 
 #### API
 
@@ -169,7 +169,7 @@ The Updates tab shows the latest updates of Sleex. The 5 last commits are shown.
 
 The dashboard is a widget with several modules. You can open it by clicking on the Time Date module in the bar, or by pressing `Super + KP_down`.
 
-![Dashboard](../../../assets/dashboard/dash.png)
+![Dashboard](../../../assets/dashboard/sleex_dashboard.gif)
 
 | Description |
 |-------------|
@@ -193,7 +193,6 @@ You can also find the following widgets:
 | The wallpaper module allows you to change the wallpaper. If no wallpapers appears, click "Generate thumbnails". You can add or remove wallpapers from the list by clicking "Open wallpaper directory". This directory is located in `~/.sleex/wallpapers/`. The chosen wallpaper will also change the global colors of the system. | ![Wallpaper](../../../assets/others/wallpapers.png) |
 | The color config popup allows you to change the color schemes and other color related settings. Note that you can't change every colors here and you have to use the gradience app to change system colors. | ![Color Config](../../../assets/others/colors.png) |
 | The notifications popup shows the notifications. You can slide them to dismiss them, open the details with the arrow and click on the buttons when maximized. Critical notifications are shown in red. | ![Notifications](../../../assets/others/notifications.png) |
-| the Music Popup shows the current song playing. You can play/pause, skip to the next song and go back to the previous song. | ![Music Popup](../../../assets/others/music.png) |
 | The overview shows the opened apps and in which workspace they are. You can manage them by clicking or moving them. You can type from there to search apps, search on the web, do a math operation or asking gemini. | ![Overview](../../../assets/others/overview.png) |
 
 
