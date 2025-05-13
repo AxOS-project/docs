@@ -36,6 +36,13 @@ epsi search <package>
 ```
 
 ```bash
+# Refresh repositories and update the package database
+epsi sync
+epsi -y
+epsi sy
+```
+
+```bash
 # List all installed packages
 epsi query
 epsi -Q
@@ -48,6 +55,11 @@ epsi query | grep <package>
 # Upgrades locally installed packages to their latest versions
 epsi upgrade
 epsi -Syu
+
+# Upgrade with backup
+epsi upgrade -s -d
+epsi upgrade --with-snapshot --delete-snapshot-onfail
+epsi -Syu --with-snapshot --replace-snapshot
 ```
 
 ```bash

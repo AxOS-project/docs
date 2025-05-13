@@ -50,8 +50,13 @@ epsi -R package1 package2 package3
 # Search for a package
 epsi search package1 package2 package3
 epsi -Ss package1 package2 package3
+
+# Refresh repositories and update the package database
+epsi sync
+epsi -y
+epsi sy
 ```
-You can find the usage of the command by running `epsi --help` or `epsi -h`.
+You can find the usage of the command by running `epsi --help` or `epsi -h`. More infos on [Epsilon's guide](/docs/guides/epsilon).
 
 Epsilon has a lot more packages than the other package managers, as it also searches in the AUR (Arch User Repository).
 
