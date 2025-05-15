@@ -24,3 +24,19 @@ axctl toggle-splash-screen
 # Boot menu is the screen which shows the boot options of `axos`
 axctl toggle-boot-menu
 ```
+
+```bash
+# Change user hostname
+axctl change-hostname newHostname
+axctl hostname newHostname # this works as well.
+```
+
+```bash
+# Network controls
+
+axctl net status # Outputs a detailed information about your internet status
+
+axctl net restart # Restarts your internet
+
+axctl net test # Tests your internet connectivity
+```
