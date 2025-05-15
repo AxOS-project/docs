@@ -59,6 +59,8 @@ epsi -Syu
 # Upgrade with backup
 epsi upgrade -s -d
 epsi upgrade --with-snapshot --delete-snapshot-onfail
+
+epsi -Syu -s -x
 epsi -Syu --with-snapshot --replace-snapshot
 ```
 
