@@ -33,10 +33,12 @@ axctl hostname newHostname # this works as well.
 
 ```bash
 # Network controls
-
 axctl net status # Outputs a detailed information about your internet status
-
 axctl net restart # Restarts your internet
-
 axctl net test # Tests your internet connectivity
+```
+
+```bash
+# Get device informations
+axctl device-info
 ```
