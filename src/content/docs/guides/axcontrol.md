@@ -42,3 +42,9 @@ axctl net test # Tests your internet connectivity
 # Get device informations
 axctl device-info
 ```
+
+```bash
+# Refresh/fetch the (default) desktop style
+axctl load-style-config
+# Caution: this could overwrite some existing configurations
+```
