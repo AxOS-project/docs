@@ -65,6 +65,8 @@ Theom is based on the i3 window manager, so you can control it with a keyboard. 
 ![Theom](../../../assets/desktops/theom1.png)
 ![Theom](../../../assets/desktops/theom2.png)
 ![Theom](../../../assets/desktops/theom3.png)
+![Theom](../../../assets/desktops/theom4.png)
+![Theom](../../../assets/desktops/theom5.png)
 
 | Pros               | Cons                                       |
 | ------------------ | ------------------------------------------ |
