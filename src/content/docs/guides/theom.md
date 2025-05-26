@@ -94,6 +94,8 @@ sudo pacman -U <installed-file>
 | text                 | -d, --duration          |
 | mode {slider, text}  | -s, --size              |
 | value                | -p, --position          |
+|                      | --margin-x              |
+|                      | --margin-y              |
 |                      | -x, --dont-reuse-window |
 |                      | --background-color      |
 |                      | --text-color            |
@@ -111,7 +113,9 @@ sudo pacman -U <installed-file>
 - The `--duration` option or `-d` in short will tell the osd to show the window for the specified amount of time. The value will be in seconds. Example: `tosd-client "" slider 50 -d 2`
 - The `--size` option or `-s` in short will be the size of the window. `1.0` is the default size. Use example: `tosd-client "" slider 50 -d 2 -s 0.5`
 - The `--position` option or `-p` in short will tell the osd to position the window to a specific place. There are 8 positions where you can position the window. `TL` for top left posiition, `T` for top, `TR` for top right, `L` for left, `C` for center, `R` for right, `BL` for bottom left, `B` for bottom,`BR` for bottom right. Use example: `tosd-client "" slider 50 -d 2 -s 0.5 -p TR`
-- The `--dont-reuse-window` option or `-x` in short will tell the server to not reuse the previous window. Using it is not recommended because by using it, you may encounter many issues if the server is requested and overloaded with too much requests. Usage example: `tosd-client "" slider 50 -d 2 -s 0.5 -p TR -x`
+- The `--margin-x` option can be used to add extra margin to have a better positioning of the drawn window. The default x margin is 20. Use example: `tosd-client "" slider 50 -d 2 -s 0.5 -p TR --margin-x 10`
+- THe `--margin-y` option is similar to `--margin-x` but it changes the y margin of the drawn window. The default y margin value is 20 as well. Use example: `tosd-client "" slider 50 -d 2 -s 0.5 -p TR --margin-y 40`
+- The `--dont-reuse-window` option or `-x` in short will tell the server to not reuse the previous window. Using it is not recommended because by using it, you may encounter many issues if the server is requested and overloaded with too much requests. Usage example: `tosd-client "" slider 50 -d 2 -s 0.5 -p TR -x`a
 
 ### Options (styling)
 
