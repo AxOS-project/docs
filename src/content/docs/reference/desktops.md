@@ -3,7 +3,7 @@ title: Desktops
 description: AxOS has 4 default desktops. Learn more about them in this reference page.
 ---
 
-AxOS has 3 default desktops. Learn more about them in this reference page.
+AxOS has 4 default desktops. Learn more about them in this reference page.
 
 ## Plasma
 

@@ -3,7 +3,7 @@ title: Epsilon
 description: Epsilon is a powerful, lightweight, and easy-to-use package manager for AxOS
 ---
 
-Epsilon (or `epsi`) is a powerful, lightweight, and easy-to-use package manager for AxOS. It is designed to be simple to use, and to provide a simple way to install, update, and remove packages on your system.
+Epsilon (or `epsi`) is a powerful, lightweight, and easy-to-use package manager for AxOS. It is designed to be simple to use, and to provide an easy way to install, update, and remove packages on your system.
 
 Epsilon fetches packages from the pacman repositories and the AUR, and can install packages from both sources. It also provides a simple way to manage your system's packages, and to keep your system up-to-date.
 

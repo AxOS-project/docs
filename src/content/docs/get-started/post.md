@@ -18,12 +18,17 @@ Plasma has a graphical configuration tool called **System Settings**. You can ac
 Calla has no graphical configuration tool for the system itself. You should therefore use the command line to configure your system. However, there is an app to configure
 some elements of Calla itself. You can access it by clicking the **gear** icon in the app menu.
 
-
 ### On Sleex
 
 Sleex has a graphical configuration app. You can access it by clicking on the **Settings** icon in the right panel, by pressing **Super + I** or by searching for **Settings** in the app menu.
 
 > Note that some elements of the app (such as the wallpaper) are not working because it uses the GNOME library. It will be fixed in the future.
+
+### On Theom
+
+Theom has a graphical configuration app. You can open it by searching for **theom-settings** application in the application launcher. The application launcer can be opened by pressing **Super + D**.
+
+You can configuire theom using the cli as well by editing the `~/.config/.theom/config.json` file.
 
 ## Install apps and packages
 
@@ -31,7 +36,7 @@ Sleex has a graphical configuration app. You can access it by clicking on the **
 
 Discover is the graphical app to install apps and packages. You can access it by clicking on the **Discover** icon in the app menu.
 
-### Epsilon 
+### Epsilon
 
 Epsilon (`epsi`) is the package manager for AxOS. You can manage your packages by using the `epsi` command:
 
@@ -56,6 +61,7 @@ epsi sync
 epsi -y
 epsi sy
 ```
+
 You can find the usage of the command by running `epsi --help` or `epsi -h`. More infos on [Epsilon's guide](/docs/guides/epsilon).
 
 Epsilon has a lot more packages than the other package managers, as it also searches in the AUR (Arch User Repository).
