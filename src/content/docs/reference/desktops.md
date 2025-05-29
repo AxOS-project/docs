@@ -5,9 +5,31 @@ description: AxOS has 4 default desktops. Learn more about them in this referenc
 
 AxOS has 4 default desktops. Learn more about them in this reference page.
 
+
+## Sleex
+
+Sleex (based on hte Hyprland compositor) is the third and primary desktop environment for AxOS. It is the most aesthetic and feature-rich desktop environment of the 3. It has a lot of features, smooth animations and a lot of cool stuff, but it is also the least stable.
+
+Like Calla, it is a tiling window manager, so you can manage your windows with a keyboard. It is also better if used with keybindings, so you can manage your windows with a keyboard. You can find them by pressing `Super + F1`. If you need, you can change some settings (including keybindings) by editing files in `.config/hypr/hyprland/` folder. You can change the wallpaper by pressing `Super + T`.
+
+**By default, the keyboard layout is set to US QWERTY, no matter what you chosed in the installation. You can change it by editing the `.config/hypr/custom/general.conf` file according to `.config/hypr/hyprland/general.conf`**. Note that if you edit the files in the `hyprland` directory, the settings will be reset in the next update.
+
+![Sleex](../../../assets/desktops/sleex1.png)
+![Sleex](../../../assets/dashboard/sleex_dashboard.gif)
+![Sleex](../../../assets/desktops/sleex3.png)
+![Sleex](../../../assets/desktops/sleex4.gif)
+
+| Pros               | Cons                           |
+| ------------------ | ------------------------------ |
+| Aesthetic          | Less stable                    |
+| Feature-rich       | Less user-friendly than Plasma |
+| Resource-efficient |                                |
+| Tiling             |                                |
+| User-friendly      |                                |
+
 ## Plasma
 
-Plasma (or KDE Plasma) is the default desktop environment for AxOS. It is a powerful, user-friendly, stable and customizable desktop environment.
+Plasma (or KDE Plasma) is the first desktop environment for AxOS. It is a powerful, user-friendly, stable and customizable desktop environment.
 
 As it is a very known and active desktop environement, you can find everything you need on Internet.
 
@@ -33,28 +55,6 @@ Calla is a tiling window manager, so you can manage your windows with a keyboard
 | Lightweight        | Hard to (fully) use               |
 | Tiling             | Less stable than Plasma           |
 | Resource-efficient | Less features than other desktops |
-
-## Sleex
-
-Sleex (based on Hyprland) is the third desktop environment for AxOS. It is the most aesthetic and feature-rich desktop environment of the 3. It has a lot of features, smooth animations and a lot of cool stuff, but it is also the least stable.
-
-Like Calla, it is a tiling window manager, so you can manage your windows with a keyboard. It is also better if used with keybindings, so you can manage your windows with a keyboard. You can find them by pressing `Super + F1`. If you need, you can change some settings (including keybindings) by editing files in `.config/hypr/hyprland/` folder. You can change the wallpaper by pressing `Super + T`.
-
-**By default, the keyboard layout is set to US QWERTY, no matter what you chosed in the installation. You can change it by editing the `.config/hypr/hyprland/general.conf` file.**
-
-![Sleex](../../../assets/desktops/sleex1.png)
-![Sleex](../../../assets/desktops/sleex2.gif)
-![Sleex](../../../assets/desktops/sleex3.png)
-![Sleex](../../../assets/desktops/sleex4.gif)
-![Sleex](../../../assets/desktops/sleex5.gif)
-
-| Pros               | Cons                           |
-| ------------------ | ------------------------------ |
-| Aesthetic          | Less stable                    |
-| Feature-rich       | Less user-friendly than Plasma |
-| Resource-efficient |                                |
-| Tiling             |                                |
-| User-friendly      |                                |
 
 ## Theom
 
