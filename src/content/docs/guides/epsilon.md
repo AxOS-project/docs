@@ -21,6 +21,10 @@ epsi install <package1> <package2> ...
 epsi i <package1> <package2> ...
 epsi -S <package1> <package2> ...
 epsi sync <package1> <package2> ...
+
+# Install from a specific repo
+epsi install <package1> <package2> ... --aur # installs the package from the aur
+epsi install <package1> <package2> ... --repo # installs the package from the axos or arch repos
 ```
 
 ```bash
@@ -33,6 +37,10 @@ epsi -R <package1> <package2> ...
 ```bash
 # Search for a package (to know the exact name or to check if it's available)
 epsi search <package>
+
+# Search in a particular repo
+epsi search <package> --aur # Searches for the package in aur
+epsi search <package> --repo # Searches for the package in axos or arch repos
 ```
 
 ```bash
@@ -46,6 +54,10 @@ epsi sy
 # List all installed packages
 epsi query
 epsi -Q
+
+# List all installed packages installed from a specific repo
+epsi query --aur # lists packages from the aur
+epsi query --repo # lists packages from the arch/axos repos
 
 # Tip: You can also use grep to search for a specific package
 epsi query | grep <package>
