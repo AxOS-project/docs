@@ -55,9 +55,15 @@ epsi sy
 epsi query
 epsi -Q
 
-# list only explicitly installed packages
+# List only explicitly installed packages
 epsi query --explicit
 epsi -Qs
+
+# Get information about a package
+epsi query --info <package>
+
+# Check which package owns a file
+epsi query --owns <path/to/file> # Example: epsi query --owns /usr/bin/python
 
 # List all installed packages installed from a specific repo
 epsi query --aur # lists packages from the aur
