@@ -55,6 +55,10 @@ epsi sy
 epsi query
 epsi -Q
 
+# list only explicitly installed packages
+epsi query --explicit
+epsi -Qs
+
 # List all installed packages installed from a specific repo
 epsi query --aur # lists packages from the aur
 epsi query --repo # lists packages from the arch/axos repos
