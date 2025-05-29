@@ -126,47 +126,11 @@ The bar is the top bar of Sleex. Several modules can be found on it.
 
 | Description                                                                                                                                                                                                                                                     | Screenshot                                               |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
-| The Title module shows the name of the current focused window. The top part is the name of the process and the big bottom part is the title of the window. Click on this module to open the left panel.                                                         | ![Title](../../../assets/barWidget/title.png)            |
+| The Title module shows the name of the current focused window. The top part is the name of the process and the big bottom part is the title of the window. | ![Title](../../../assets/barWidget/title.png)            |
 | The monitoring module shows the CPU usage, RAM usage and CPU temperature.                                                                                                                                                                                       | ![Monitoring](../../../assets/barWidget/monitoring.png)  |
 | The Workspace module shows the workspaces (wow, what a surprise). The focused workspace is highlighted. Used workspaces are shown in white, unused workspaces are shown in grey. Click on a workspace to switch to it. You can also scroll to change workspace. | ![Workspace](../../../assets/barWidget/workspace.png)    |
 | The Time Date module shows the current time and date. Click on it to open the dashboard.                                                                                                                                                                        | ![Time Date](../../../assets/barWidget/timeDate.png)     |
 | The system trays and system icons are shown in the right part of the bar. Click to open the dashboard.                                                                                                                                                          | ![System Tray](../../../assets/barWidget/systemTray.png) |
-
-### Left Panel
-
-The left panel is a widget with several modules. You can open it by clicking on the Title module in the bar, or by pressing `Super + KP_left`.
-
-Two tabs are available: API and Updates.
-
-![Left Panel](../../../assets/leftPanel/sleex_sideleft.gif)
-
-#### API
-
-The API tab shows multiple AI chat providers. The default one is OpenRouter (with the llama3.2 model). You can change the provider by clicking on the provider name. You can also change the model by clicking on the model name. The available providers are:
-
-- OpenRouter
-- OpenAI
-- Gemini
-- Ollama
-- Oxygen
-
-Most of them require an API key. You can get one by following the instructions on the provider's website. To change the API key, type `/key <YOUR_API_KEY>` in the chat of the provider.
-
-The chat is a simple chat. You can type a message and press Enter to send it. The chat will answer you.
-When you start a chat, you will see 3 options: Precise, Balanced and Creative. This option will change the behavior of the AI by changing some parameters such as temperature.
-The "Enhancement" switch is enabled by default. If enabled, the AI will know it is in the sidebar and will be brief and use bullet points. If disabled, the AI will act like a normal chatbot.
-Gemini has two more options:
-
-- Safety: When turned off, tells the API (not the model) to not block harmful / explicit content.
-- History: When turned off, tells the API to not use the conversation history.
-
-the `/model` command will show you the current model and the `/clear` command will clear the chat and the history.
-
-Note that the chat supports markdown (color preview, code blocks, etc). You can try by typing `/test`.
-
-#### Updates
-
-The Updates tab shows the latest updates of Sleex. The 5 last commits are shown. If a update is available, you can click on the "Update" button to update Sleex.
 
 ### Dashboard
 
@@ -174,18 +138,40 @@ The dashboard is a widget with several modules. You can open it by clicking on t
 
 ![Dashboard](../../../assets/dashboard/sleex_dashboard.gif)
 
-| Description                                                                                                                                                       |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| The quick toggle buttons allow you to quickly enable or disable some features. Default buttons are: Wi-Fi, Bluetooth, Night Mode, Keep Awake (don't lock screen). |
-| The setting section has multiple tabs: audio, bluetooth, wifi and quick settings (look and feel settings)                                                         |
-| The notification center shows the notifications. You can also click on Clear and "Do not disturb" to clear the notifications and enable the do not disturb mode.  |
-| The Calendar module shows the current month and day.                                                                                                              |
-| The TODO module allows you to create a TODO list.                                                                                                                 |
-| The Weather module shows the current weather on your lcoation (based on your IP).                                                                                 |
-| The music module shows the current song playing. You can play/pause, skip to the next song and go back to the previous song.                                      |
-| The quote module shows a random quote.                                                                                                                            |
+#### Home tab
+In the home tab, you will find simple display elements:
+- **User greeting**, because we are polite. You must set the profile icon in `/var/lib/AccountsService/icons/<your_name>` with no extension.
+- **Clock**. Well, do I need to explain ?
+- **Contribution number** using the github API. There is currently no way to change the username without changing this file: `/usr/share/sleex/modules/dashboard/widgets/github.js`
+- **Notification center** with the list of notifications. Click on the arrow to expand them. There is also a button to enable DnD, so you won't get a notification popup.
+- **Music controller** to control the music. Surprising, isn't it ?
+- **Weather module** based on your current location according to your public IP.
+- **Calendar** that doesn't do much...
+- **Quote** to be inspired.
 
-The last tab is particular. The "Live config" tab has a lot of options. No need to explain them all, you can hover over them to see what they do.
+#### Settings tab
+This tab has quick settings:
+- **Effect settings** to modify Sleex's effects such as blur or transparency
+- **Developer options** that can be useful for debugging Sleex
+- **Customisation** to edit the elements of the bar
+- **Bluetooth** to connect and manage your bluetooth devices
+- **Wifi** to manage your WiFi connexions
+- **Audio control** to manage your audio input/outputs and change the sound level of each running apps
+
+#### Todo tab
+It's a simple todo list, nothing more nothing less
+
+#### APIs tab
+Here, you will find AI assistants. The default agent is Gemini, but in the second section of this tab, you can chose more assistants. 
+
+The output supports Markdown and LaTeX (maths).
+
+#### Updates tab
+This tab is for updating Sleex.
+The left secion has a simple box with the current version and a update button.
+The right section shows the last 5 commits made in the Sleex github repo
+*Note that a new commit doesn't mean an available update*
+
 
 ### Others
 
