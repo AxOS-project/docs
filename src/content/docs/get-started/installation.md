@@ -24,7 +24,9 @@ So, you are ready to install AxOS? Great! This guide will help you to install Ax
 
 <br />
 
-AxOS doesn't support 32 bits and ARM architectures. If you are using a 32 bits or ARM architecture, you won't be able to install AxOS.
+**AxOS doesn't support 32 bits and ARM architectures.** If you are using a 32 bits or ARM architecture, you won't be able to install AxOS.
+
+**Secure boot is not supported** and **YOU WON'T BE ABLE TO BOOT WITHOUT UEFI**.
 
 ## Create the installation media
 

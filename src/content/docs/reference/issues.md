@@ -43,6 +43,13 @@ sudo ln -sf /usr/lib/libhyprutils.so.X /usr/lib/libhyprutils.so.Y # Where Y is a
 
 This is a temporary fix, like putting a band-aid on a wound, but it will do the job until the packagers fix the issue.
 
+## Can't boot: /dev/disk/by-label' device did not show up after 30 seconds...
+
+This happens when the UEFI is disabled.
+
+Enable it in your BIOS (Or in your VM settings if you are using a VM) to fix this issue.
+
+
 
 ## Report an issue
 

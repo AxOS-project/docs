@@ -57,7 +57,7 @@ epsi -Q
 
 # List only explicitly installed packages
 epsi query --explicit
-epsi -Qs
+epsi -Qe
 
 # Get information about a package
 epsi query --info <package>
