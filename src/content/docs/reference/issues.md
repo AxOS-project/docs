@@ -15,6 +15,7 @@ sudo pacman-key --init
 # Populate the keys
 sudo pacman-key --populate archlinux
 ```
+
 Then, you can try to install the package again. If it still doesn't work, you can try to remove the package and then install it again.
 
 ## Mouse cursor is getting bigger in Plasma
@@ -23,9 +24,10 @@ You are shaking your mouse, right? That's why the mouse cursor is getting bigger
 
 ## Can't login to Sleex
 
-We are talking here about when the login screen logins and then goes back to the login screen. 
+We are talking here about when the login screen logins and then goes back to the login screen.
 
 This is a known issue with the hyprland package. This can happen sometimes when the packagers are updating the libraries. I cannot provide a fix for this, but there are two options for you:
+
 1. Wait for the packagers to fix the issue. This can take some time, so be patient.
 2. open the TTY (`Ctrl + Alt + F3`) and login with your username and password. Then, you can run the following command to start the Sleex desktop environment:
 
@@ -49,7 +51,15 @@ This happens when the UEFI is disabled.
 
 Enable it in your BIOS (Or in your VM settings if you are using a VM) to fix this issue.
 
+## Blank cheatsheet issue in sleex
 
+The issue occours because the cheatsheet uses the `keybinds.conf` configuration file. When sleex starts for the first time, it also chooses the good configuration file to apply. The widget is generated before the configuration file which causes this issue.
+
+To fix this issue, you just have to do any of the three things listed below.
+
+- Refresh the widgets. (Ctrl+Alt+Win+R)
+- Reboot.
+- Log out and log back in.
 
 ## Report an issue
 
