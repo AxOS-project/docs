@@ -87,41 +87,12 @@ sudo pacman -U <installed-file>
 
 `tosd-client` is the cli tool that comes with tosd. `tosd-client` allows easy communication between the `tosd-server` to draw OSD (On Screen Display) on the screen.
 
-## Positional arguments and options
+## Customising theom
 
-| Positional arguments | Options                 |
-| -------------------- | ----------------------- |
-| text                 | -d, --duration          |
-| mode {slider, text}  | -s, --size              |
-| value                | -p, --position          |
-|                      | --margin-x              |
-|                      | --margin-y              |
-|                      | -x, --dont-reuse-window |
-|                      | --background-color      |
-|                      | --text-color            |
-|                      | --slider-fill-color     |
-|                      | --slider-knob-color     |
+### Desktop
 
-### Arguments
+You can customise theom by editing the **config.toml** file located at `~/.config/.theom/config.toml`. This is the file that you should edit to change the looks of the theom desktop.
 
-- The text argument should be passed as a string like this: `tosd-client "the text value"`
-- The mode value should be either slider or text. Example: `tosd-client "" slider`
-- The value argument value should be the number or string that you pass to the mode. Example: `tosd-client "" slider 50`
+### Keybindings
 
-### Options (utils)
-
-- The `--duration` option or `-d` in short will tell the osd to show the window for the specified amount of time. The value will be in seconds. Example: `tosd-client "" slider 50 -d 2`
-- The `--size` option or `-s` in short will be the size of the window. `1.0` is the default size. Use example: `tosd-client "" slider 50 -d 2 -s 0.5`
-- The `--position` option or `-p` in short will tell the osd to position the window to a specific place. There are 8 positions where you can position the window. `TL` for top left posiition, `T` for top, `TR` for top right, `L` for left, `C` for center, `R` for right, `BL` for bottom left, `B` for bottom,`BR` for bottom right. Use example: `tosd-client "" slider 50 -d 2 -s 0.5 -p TR`
-- The `--margin-x` option can be used to add extra margin to have a better positioning of the drawn window. The default x margin is 20. Use example: `tosd-client "" slider 50 -d 2 -s 0.5 -p TR --margin-x 10`
-- THe `--margin-y` option is similar to `--margin-x` but it changes the y margin of the drawn window. The default y margin value is 20 as well. Use example: `tosd-client "" slider 50 -d 2 -s 0.5 -p TR --margin-y 40`
-- The `--dont-reuse-window` option or `-x` in short will tell the server to not reuse the previous window. Using it is not recommended because by using it, you may encounter many issues if the server is requested and overloaded with too much requests. Usage example: `tosd-client "" slider 50 -d 2 -s 0.5 -p TR -x`a
-
-### Options (styling)
-
-> NOTE: All the values to the styling options should be in hexadecimal as a string. Example: "#ffffff" for white.
-
-- The `--background-color` option is used to set the background color of the osd window. Use example: `tosd-client "" slider 50 -d 2 -s 0.5 -p TR -r --background-color "#000000"`
-- The `--text-color` option is used to set the text color of the osd window. Use example: `tosd-client "" slider 50 -d 2 -s 0.5 -p TR -r --text-color "#ffffff"`
-- The `--slider-fill-color` option is used to set the color of the slider. Use example: `tosd-client "" slider 50 -d 2 -s 0.5 -p TR -r --slider-fill-color "#333333"`
-  The `--slider-knob-color` option is used to set the color of the knob of the slider. Use example: `tosd-client "" slider 50 -d 2 -s 0.5 -p TR -r --slider-knob-color "#555555"`
+To change the keybindings, edit the **keybindings.conf** file located at `~/.config/.theom/keybindings.conf`. This file contains both the keybindings and what that keybinding does. So you can customise both the keybindings and the applications that the keybindings open in this one config file.
