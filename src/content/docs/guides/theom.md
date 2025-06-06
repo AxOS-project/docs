@@ -83,16 +83,12 @@ sudo pacman -U <installed-file>
   - `semicolon` / `Right` — Grow width
   - `Enter` / `Escape` / `mod+r` — Exit resize mode
 
-# TOSD client commands
+# Customising Theom
 
-`tosd-client` is the cli tool that comes with tosd. `tosd-client` allows easy communication between the `tosd-server` to draw OSD (On Screen Display) on the screen.
-
-## Customising theom
-
-### Desktop
+## Desktop
 
 You can customise theom by editing the **config.toml** file located at `~/.config/.theom/config.toml`. This is the file that you should edit to change the looks of the theom desktop.
 
-### Keybindings
+## Keybindings
 
 To change the keybindings, edit the **keybindings.conf** file located at `~/.config/.theom/keybindings.conf`. This file contains both the keybindings and what that keybinding does. So you can customise both the keybindings and the applications that the keybindings open in this one config file.
