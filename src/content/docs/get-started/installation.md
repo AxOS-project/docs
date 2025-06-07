@@ -28,7 +28,7 @@ So, you are ready to install AxOS? Great! This guide will help you to install Ax
 
 **Secure boot is not supported** and **YOU WON'T BE ABLE TO BOOT WITHOUT UEFI**.
 
-**Support of virtual machine architecture is also currently problematical and your mileage may vary.  We recommend actual hardware installation for various reasons.  Otherwise, evaluate the LIVE iso before installing, it is a point in time release but with our featured desktop environment, Sleex.**
+**Support of virtual machine architecture is also currently problematical and your mileage may vary.  We recommend actual hardware installation for various reasons.  Otherwise, evaluate the LIVE iso before installing, it is a point in time release using the desktop environment, Sleex.**
 
 ## Create the installation media
 
@@ -36,7 +36,7 @@ The installation media is a USB drive or an SD card used to install AxOS.   You 
 
 ### Get the ISO
 
-The ISO (or .iso) is the installation image of AxOS. You can download it from the [AxOS release page](https://github.com/axos-project/axos/releases/latest).  Please ensure you have the lastest ISO, previous ISOs will often have issues with the changing nature of Arch-Linux.
+The ISO (or .iso) is the installation image of AxOS. You can download it from the [AxOS release page](https://github.com/axos-project/axos/releases/latest).  Please ensure you have the lastest ISO, previous ISOs will often have installation issues with the evolution of the Arch ecosystem.
 
 ### Flash the ISO to the installation media
 
@@ -60,7 +60,7 @@ You can use the **Rufus** app or the **Balena Etcher** app. You can also use the
 
 ## Start the installation
 
-If you have the installation media ready, now you can start the installation.
+If you have the installation media ready, you can start the installation.
 
 ### Boot from the installation media
 
@@ -68,14 +68,14 @@ If you have the installation media ready, now you can start the installation.
 2. Access the boot menu of your computer. The key to access the boot menu varies from one computer to another, but it's usually **F2**, **F10**, **F12**, **Delete**, **Esc**, or **F1**.
 3. Select the installation media as the boot device.
 
-You should now boot on the live AxOS environment. The live environment is a testing environment, so you can try AxOS without having to install it. By default, the live environment is the **Sleex** desktop environment.
+You should now boot to the live AxOS environment. The live environment is a testing environment, so you can try AxOS without having to install it. By default, the live environment is the **Sleex** desktop environment.
 
 You should now see this screen (or very similar).
 ![Grub Boot Menu](/assets/images/boot.png)
 
 ## Install AxOS
 
-Are you ready to install AxOS? Great! The install app should automatically start, otherwise you can find it in the app menu called **Install AxOS**. This app will guide you through the installation process.  Use the super key (Windows key) to activate the search menu if needed. 
+Are you ready to install AxOS? Great! The install app should automatically start, otherwise you can find it in the app menu with the name **Install AxOS**. This app will guide you through the installation process.  Use the super key (Windows key) to activate the search menu if needed. 
 ![Install App](/assets/images/install1.png)
 
 The different steps are:

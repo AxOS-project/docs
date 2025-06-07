@@ -5,16 +5,16 @@ description: Options on how to handle disk partitioning
 
 So, if you are planning on custom partitioning, you probably know what you're doing, so I'll make this pretty short.
 
-###Minimal Requirements to install
+### Minimal Requirements to install
 
 | Partition |Min Size|      FS       |
 |-----------|--------|---------------|
 | /         |  10 GB | Linux native  |
-| /boot/efi |  1 GB  |    FAT32      |
+| /boot/efi | 250 MB |    FAT32      |
 |-----------|--------|---------------|
 
 ![Select partitions](/assets/images/man1-1.png)
-I think Gparted is being taken off the menu, so I haven't covered that.  Feel free to use a disk partition editor of your choice.
+Gparted is available if you wish/need.
 You can view the available choice for supported filesystems and mount points by clicking on the menus as shown below.
 ![Disk choices](/assets/images/man2-1.png)
 ![Disk choices](/assets/images/man3-1.png)
