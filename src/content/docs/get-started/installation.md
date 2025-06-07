@@ -71,34 +71,26 @@ If you have the installation media ready, you can start the installation.
 You should now boot to the live AxOS environment. The live environment is a testing environment, so you can try AxOS without having to install it. By default, the live environment is the **Sleex** desktop environment.
 
 You should now see this screen (or very similar).
-![Grub Boot Menu](/assets/images/boot.png)
+![Grub Boot Menu](../../../assets/installer/boot.png)
 
 ## Install AxOS
 
 Are you ready to install AxOS? Great! The install app should automatically start, otherwise you can find it in the app menu with the name **Install AxOS**. This app will guide you through the installation process.  Use the super key (Windows key) to activate the search menu if needed. 
-![Install App](/assets/images/install1.png)
+![Install App](../../../assets/installer/install1-1.png)
 
 The different steps are:
+| Step  | Reference |
+|------|-----------|
+| Choose your preferred keyboard layout. | ![Select Keyboard](../../../assets/installer/install2-1.png) |
+| Select your timezone | ![Select timezone](../../../assets/installer/install4-1.png) |
+| Set the system locale and date settings | ![Select locale](../../../assets/installer/install5-1.png) |
+| Create user account with username, password, and admin rights | ![Create User](../../../assets/installer/users-1.png) |
+| Choose your desktop between Plasma, Calla, or Sleex. See what they are [in the dedicated desktops tab](/docs/reference/desktops/) | ![Select Desktop](../../../assets/installer/install7-1.png) |
+| Choose between Linux or Linux-zen kernel. The Linux kernel aims for stability and the zen focuses on the performances, but is less stable. | ![Select kernel](../../../assets/installer/install8-1.png) |
+| Configure NVidia drivers, optional app packages and your desired swap size(screenshot outdated). | ![Select Misc](../../../assets/installer/install9-1.png) |
+| Choose installation disk and partitioning method | ![Select Misc](../../../assets/installer/disk-1-1.png) |
+| Verify selections and begin installation | |
 
-- Select the keyboard layout
-![Select Keyboard](/assets/images/install2-1.png)
-- Select the timezone
-![Select timezone](/assets/images/install4-1.png)
-- Set the locale and set date
-![Select locale](/assets/images/install5-1.png)
-- Create the user (username, password, admin rights, etc.)
-![Create User](/assets/images/users-1.png)
-- Select the desktop environment (Plasma, Calla, or Sleex)
-![Select Desktop](/assets/images/install7-1.png)
-- Select the kernel (Linux or Linux-zen)
-![Select kernel](/assets/images/install8-1.png)
-- Miscellaneous settings (NVidia drivers, app packages, etc.)  If none are desired, you can simply Next and go to the next screen. This is simply for convenience and you can certainly add anything you need later manually.
-![Select Misc](/assets/images/install9-1.png)
-- Select the disk to install AxOS on
-You have choices here, you can install whole disk (the default) by clicking on a disk, select existing partitions and set mount points, or launch an external partitioning program to create a new custom partition scheme.<br>
-You can click on the image below to open a document with some details on manual partitioning support, if you wish/need.
-[![Select Misc](/assets/images/disk1-1.png)](http://url/custom-disk.html)]
-- Recap and install
 Take a look at the choices you've made, validate everything, and then start the installation.  The installer will fetch the latest packages and install them in the selected disk. This process can take a few minutes, depending on the speed of your disk and internet connection.
 
 ## Conclusion
