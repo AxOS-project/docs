@@ -5,7 +5,6 @@ description: AxOS has 4 default desktops. Learn more about them in this referenc
 
 AxOS has 4 default desktops. Learn more about them in this reference page.
 
-
 ## Sleex
 
 Sleex (based on hte Hyprland compositor) is the third and primary desktop environment for AxOS. It is the most aesthetic and feature-rich desktop environment of the 3. It has a lot of features, smooth animations and a lot of cool stuff, but it is also the least stable.
@@ -66,7 +65,6 @@ Theom is based on the i3 window manager, so you can control it with a keyboard. 
 ![Theom](../../../assets/desktops/theom2.png)
 ![Theom](../../../assets/desktops/theom3.png)
 ![Theom](../../../assets/desktops/theom4.png)
-![Theom](../../../assets/desktops/theom5.png)
 
 | Pros               | Cons                                       |
 | ------------------ | ------------------------------------------ |
