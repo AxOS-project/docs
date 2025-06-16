@@ -61,6 +61,12 @@ To fix this issue, you just have to do any of the three things listed below.
 - Reboot.
 - Log out and log back in.
 
+## Resolution issue in sleex
+
+Is your sleex widgets overflowing? It's a known issue in sleex.
+
+Currently there is no fix for this but the maintainers of sleex are working on fixing this issue.
+
 ## Report an issue
 
 If your issue is not listed here, please open an issue on the [GitHub repository](https://github.com/AxOS-project/axos), or contact us on [Discord](https://discord.gg/sG3NBMYg77) or via email at [ardox@axos-project.com](mailto:ardox@axos-project.com).
