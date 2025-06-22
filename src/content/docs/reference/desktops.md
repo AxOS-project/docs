@@ -65,10 +65,11 @@ Theom is based on the i3 window manager, so you can control it with a keyboard. 
 ![Theom](../../../assets/desktops/theom2.png)
 ![Theom](../../../assets/desktops/theom3.png)
 ![Theom](../../../assets/desktops/theom4.png)
+![Theom](../../../assets/desktops/theom5.png)
 
 | Pros               | Cons                                       |
 | ------------------ | ------------------------------------------ |
-| Lightweight        | Less stable than plasma                    |
-| Resource-efficient | Less user-friendly than Plasma             |
-| Tiling             | Less features compared to sleex and plasma |
+| Lightweight        | Less user-friendly than Plasma             |
+| Resource-efficient | Less features compared to sleex and plasma |
+| Tiling             |                                            |
 | User-friendly      |                                            |
