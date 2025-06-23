@@ -42,6 +42,8 @@ description: The fourth desktop environment for AxOS.
    - [Reloading](#reloading)
    - [Recovery](#recovery)
 
+5. [PITFALLS IN THEOM](#PITFALLS-IN-THEOM)
+
 ## Installation
 
 There are two ways to install Theom: via Epsilon, or manually.
@@ -133,7 +135,7 @@ Replace `<downloaded-file>` with the actual filename.
 Main configuration file:
 
 ```bash
-~/.config/.theom/config.toml
+~/.config/theom/config.toml
 ```
 
 This file manages themes, widgets, compositor modes, and more.
@@ -221,8 +223,13 @@ If your config breaks:
 2. Restore the config:
 
 ```bash
-rm ~/.config/.theom/config.toml
-cp /usr/share/theom/config/.theom/config.toml ~/.config/.theom/
+
+# Option 1: Auto-regenerate
+rm ~/.config/theom/config.toml
+theom-setup # regenerates the file
+
+# Option 2: Restore the default manually
+cp /usr/share/theom/config/theom/config.toml ~/.config/theom/
 ```
 
 3. Re-login.
@@ -236,7 +243,7 @@ cp /usr/share/theom/config/.theom/config.toml ~/.config/.theom/
 The keybindings config is at:
 
 ```bash
-~/.config/.theom/keybindings.conf
+~/.config/theom/keybindings.conf
 ```
 
 This file follows the same syntax as i3wm configs.
@@ -286,10 +293,19 @@ If you break it:
 
 ```bash
 # Option 1: Auto-regenerate
-rm ~/.config/.theom/keybindings.conf
+rm ~/.config/theom/keybindings.conf
+theom-setup # regenerates the config
 
 # Option 2: Restore default manually
-cp /usr/share/theom/config/.theom/keybindings.conf ~/.config/.theom/
+cp /usr/share/theom/config/theom/keybindings.conf ~/.config/theom/
 ```
 
 3. Re-login.
+
+---
+
+## PITFALLS IN THEOM
+
+Theom has as a few pitfalls due to it's philosophies.
+
+You can read the common pitfalls in theom at our [GitHub Wiki](https://github.com/AxOS-project/Theom/wiki/Pitfalls-in-Theom)
