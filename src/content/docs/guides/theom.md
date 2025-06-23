@@ -1,6 +1,6 @@
 ---
 title: Theom
-description: The fourth desktop environment for AxOS.
+description: The fourth desktop environment of AxOS.
 ---
 
 ## Table of Contents
@@ -10,7 +10,7 @@ description: The fourth desktop environment for AxOS.
    - [Epsilon Install](#epsilon-install)
    - [Manual Install](#manual-install)
 
-2. [Keybindings](#keybindings)
+2. [Default Keybindings](#default-keybindings)
 
    - [Essentials](#essentials)
    - [Workspace Management](#workspace-management)
@@ -71,7 +71,7 @@ Replace `<downloaded-file>` with the actual filename.
 
 ---
 
-## Keybindings
+## Default Keybindings
 
 > The `mod` key refers to the **Super (Windows)** key.
 
@@ -308,4 +308,12 @@ cp /usr/share/theom/config/theom/keybindings.conf ~/.config/theom/
 
 Theom has as a few pitfalls due to it's philosophies.
 
-You can read the common pitfalls in theom at our [GitHub Wiki](https://github.com/AxOS-project/Theom/wiki/Pitfalls-in-Theom)
+You can read the common pitfalls in theom at our [GitHub Wiki](https://github.com/AxOS-project/Theom/wiki/Pitfalls-in-Theom).
+
+---
+
+<p style="font-size: 0.9em; text-align: center;">
+  Last updated: <strong>2025-06-23</strong> • Theom <strong>v1.2.1</strong>
+</p>
+
+---
