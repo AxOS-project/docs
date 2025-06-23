@@ -42,7 +42,7 @@ description: The fourth desktop environment for AxOS.
    - [Reloading](#reloading)
    - [Recovery](#recovery)
 
-5. [PITFALLS IN THEOM](#PITFALLS-IN-THEOM)
+5. [PITFALLS IN THEOM](#pitfalls-in-theom)
 
 ## Installation
 
