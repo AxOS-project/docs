@@ -80,6 +80,7 @@ Replace `<downloaded-file>` with the actual filename.
 - `mod+Return` — Launch terminal (default: Alacritty)
 - `mod+d` — Open application launcher (Rofi)
 - `mod+Shift+d` — Open Theom dashboard
+- `mod+f1` — Open Theom cheatsheet
 - `mod+Shift+q` — Close focused window
 - `mod+f` — Toggle fullscreen
 - `mod+Shift+space` — Toggle floating mode
@@ -155,7 +156,7 @@ Controls visual theme and wallpaper.
 ```toml
 [appearance]
 theme = "light"
-wallpaper = "/usr/share/backgrounds/dunes-sun.jpg"
+wallpaper = "/usr/share/backgrounds/theom/dunes-sun.jpg"
 ```
 
 - `theme`: Either `"light"` or `"dark"`.
@@ -182,8 +183,8 @@ Controls widget visibility and source files.
 [widgets]
 enable_widgets = true
 show = [
-    "~/.config/widgets/time.lua",
-    "~/.config/widgets/uptime.lua"
+    "~/.config/theom/twidgets/time.lua",
+    "~/.config/theom/twidgets/uptime.lua"
 ]
 ```
 
@@ -313,7 +314,7 @@ You can read the common pitfalls in theom at our [GitHub Wiki](https://github.co
 ---
 
 <p style="font-size: 0.9em; text-align: center;">
-  Last updated: <strong>2025-06-23</strong> • Theom <strong>v1.2.1</strong>
+  Last updated: <strong>2025-06-26</strong> • Theom <strong>v2</strong>
 </p>
 
 ---
