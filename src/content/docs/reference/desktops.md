@@ -59,7 +59,7 @@ Calla is a tiling window manager, so you can manage your windows with a keyboard
 
 Theom is the fourth desktop enviornment for AxOS. It is made for ease of use, minimalism and customisability.
 
-Theom is based on the i3 window manager, so you can control it with a keyboard. You can view the keybindings at [theom documentaiton page](https://www.axos-project.com/docs/guides/theom/) or by pressing the `View Keybindings` button on the theom welcomer application. You can customise theom by editing the `~/.config/.theom/config.json` file but it is better to use the `theom settings` application instead. You can view your system specs and other information via `theom dashboard`. You can open it by pressing `Super + Shift + D`
+Theom is based on the i3 window manager, so you can control it with a keyboard. You can view the keybindings at [theom documentaiton page](https://www.axos-project.com/docs/guides/theom/) or by using the `cheetsheet` which you can open by pressing `Super + F1`. You can customise theom by editing the `~/.config/theom/config.toml` file but it is better to use the `theom settings` application instead. You can view your system specs and other information via `theom dashboard`. You can open it by pressing `Super + Shift + D`
 
 ![Theom](../../../assets/desktops/theom1.png)
 ![Theom](../../../assets/desktops/theom2.png)
