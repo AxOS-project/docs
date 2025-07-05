@@ -3,9 +3,9 @@ title: Known issues
 description: A list of known issues in AxOS.
 ---
 
-<!-- This needs to be removed later since axos is gaining traction -->
-
-(As i don't have a lot of feedback from the community, this page is not complete. If you encounter an issue, please report it to us.)
+> <p style="color: cyan; font-weight: bold;">NOTE</p>
+>
+> As AxOS lacks feedback from the community, this page is not complete. If you encounter an issue, please report it to us so that we can add it here.
 
 ### Contents
 
