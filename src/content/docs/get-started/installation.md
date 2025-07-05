@@ -28,15 +28,15 @@ So, you are ready to install AxOS? Great! This guide will help you to install Ax
 
 **Secure boot is not supported** and **YOU WON'T BE ABLE TO BOOT WITHOUT UEFI**.
 
-**Support of virtual machine architecture is also currently problematical and your mileage may vary. We recommend actual hardware installation for various reasons. Otherwise, evaluate the LIVE iso before installing, it is a point in time release using the desktop environment, Sleex.**
+**Support for virtual machine architectures is partially implemented and the time needed for the installation process may vary. We recommend an actual hardware installation for various reasons. Otherwise, try out the LIVE environment before installing, it is a point in time release using the desktop environment, Sleex.**
 
 ## Create the installation media
 
-The installation media is a USB drive or an SD card used to install AxOS. You must have at least **2GB** of free space. This number may change with subsequent releases.
+The installation media must be a USB drive or an SD card. You must have at least **2GB** of free space. This number may change with subsequent releases.
 
 ### Get the ISO
 
-The ISO (or .iso) is the installation image of AxOS. You can download it from the [AxOS release page](https://github.com/axos-project/axos/releases/latest). Please ensure you have the lastest ISO, previous ISOs will often have installation issues with the evolution of the Arch ecosystem.
+The ISO (or .iso) is the installation image of AxOS. You can download it from the [AxOS release page](https://github.com/axos-project/axos/releases/latest). Please ensure you have the latest ISO, previous ISOs will often have installation issues with the evolution of the Arch ecosystem.
 
 ### Flash the ISO to the installation media
 
