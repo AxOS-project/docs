@@ -15,6 +15,7 @@ description: A list of known issues in AxOS.
 - [Can't boot: /dev/disk/by-label' device did not show up after 30 seconds...](#cant-boot-devdiskby-label-device-did-not-show-up-after-30-seconds)
 - [Blank cheatsheet issue in sleex](#blank-cheatsheet-issue-in-sleex)
 - [Resolution issue in sleex](#resolution-issue-in-sleex)
+- [Greyed out next button in locale screen in AxOS installer](#greyed-out-next-button-in-locale-screen-in-axos-installer)
 
 ### Invalid or corrupted packages
 
@@ -77,6 +78,14 @@ To fix this issue, you just have to do any of the three things listed below.
 Is your sleex widgets overflowing? It's a known issue in sleex.
 
 Currently there is no fix for this but the maintainers of sleex are working on fixing this issue.
+
+### Greyed out next button in locale screen in AxOS installer
+
+This happens because the locale that you selected is not installed in the system.
+
+To fix this, edit `/etc/locale.gen` and uncomment the locale that you want. Then, run `locale-gen` in a terminal to install locale that you want.
+
+If you don't want this method, then you can select another locale that is installed on the system.
 
 ### Report an issue
 

@@ -85,7 +85,7 @@ The different steps are:
 |------|-----------|
 | Choose your preferred keyboard layout. | ![Select Keyboard](../../../assets/installer/install2-1.png) |
 | Select your timezone | ![Select timezone](../../../assets/installer/install4-1.png) |
-| Set the system locale and date settings | ![Select locale](../../../assets/installer/install5-1.png) |
+| Set the system locale and date settings ([beware of this issue](https://www.axos-project.com/docs/reference/issues/#greyed-out-next-button-in-locale-screen-in-axos-installer)) | ![Select locale](../../../assets/installer/install5-1.png) |
 | Create user account with username, password, and admin rights | ![Create User](../../../assets/installer/users-1.png) |
 | Choose your desktop between Plasma, Calla, or Sleex. See what they are [in the dedicated desktops tab](/docs/reference/desktops/) | ![Select Desktop](../../../assets/installer/install7-1.png) |
 | Choose between Linux or Linux-zen kernel. The Linux kernel aims for stability and the zen focuses on the performances, but is less stable. | ![Select kernel](../../../assets/installer/install8-1.png) |
