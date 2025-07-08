@@ -1,5 +1,5 @@
 ---
-title: Sleex
+title: Calla
 description: The second desktop environement for AxOS.
 ---
 
