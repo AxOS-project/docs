@@ -14,16 +14,12 @@ How to do a full **dual boot installation** with **Windows 11** and **AxOS** (Wi
 
 We need to shrink an existing partition to make room for AxOS.
 
-> ⚠️ **Important Note**:
-> It’s strongly recommended to install Linux on the **same physical disk (SSD/HDD)** where Windows is installed. Installing it on a second disk can cause bootloader issues or system instability.
-
 ### Instructions:
 
 1. Press `Win + X` → choose **Disk Management**
    *or*
    Press `Win + R`, type `diskmgmt.msc`, and hit Enter.
 2. In the Disk Management window:
-
    * Right-click on a partition with enough free space (e.g. your D: drive)
    * Click **"Shrink Volume"**
    * Enter how much you want to shrink (in MB). For example, `50000` for 50 GB
