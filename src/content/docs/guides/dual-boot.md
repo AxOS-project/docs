@@ -1,3 +1,8 @@
+---
+title: Dual boot tutorial
+description: How do do a dual boot with Windows (or any other OS)
+---
+
 # Dual Boot Guide: Windows + AxOS
 
 How to do a full **dual boot installation** with **Windows 11** and **AxOS** (Windows 10 should work as well).
@@ -142,7 +147,7 @@ Now we’re ready to launch the installer.
 
 * For the **Linux root partition**:
 
-  * Set **ext4** format
+  * Set **ext4** format (ext4 is an example, but it's also recommended)
   * Set mount point to `/`
 
 4. Continue through the installer
