@@ -98,12 +98,7 @@ EFI partition done!
 
 > Confirm with `y` if asked.
 
-We’ve now created two partitions, but they are still **unformatted**.
-
-
-## Step 5: Format the Partitions
-
-We now format the two partitions to make them usable by the system.
+We’ve now created two partitions.
 
 > ⚠️ The **partition names** depend on your disk:
 >
@@ -111,24 +106,8 @@ We now format the two partitions to make them usable by the system.
 > * If your disk is `/dev/nvme0n1`, partitions will be `/dev/nvme0n1p1`, `/dev/nvme0n1p2`, etc.
 >   *(Note the **"p"** before the number of partition)*
 
-### Format the EFI Partition:
 
-```bash
-sudo mkfs.fat -F32 /dev/nvme0n1p1
-```
-
-### Format the Root Partition:
-
-```bash
-sudo mkfs.ext4 /dev/nvme0n1p2
-```
-
-**Adjust disk and partition names and numbers as needed.**
-
-
-## Step 6: Mount the Partitions
-
-Before launching the installer, we need to **manually mount** the partitions:
+## Step 5: Mount the Partitions
 
 ### Mount the Root Partition:
 
@@ -148,7 +127,7 @@ sudo mount /dev/nvme0n1p1 /mnt/boot/efi
 Now we’re ready to launch the installer.
 
 
-## Step 7: Launch the AxOS Installer
+## Step 6: Launch the AxOS Installer
 
 1. Open the **AxOS Install** application from the menu.
 2. Proceed through the installation.
@@ -158,16 +137,18 @@ Now we’re ready to launch the installer.
 
 * For the **EFI partition**:
 
+  * Set **FAT32** format
   * Set mount point to `/boot/efi`
-  * Set **Do Not Format** (since we already formatted it)
+
 * For the **Linux root partition**:
 
+  * Set **ext4** format
   * Set mount point to `/`
-  * Set **Do Not Format**
 
 4. Continue through the installer
 5. Once installation finishes, reboot
 
+**Adjust disk and partition names and numbers as needed.**
 
 ## Step 8: Configure GRUB to Detect Windows
 
@@ -182,7 +163,7 @@ sudo nano /etc/default/grub
 ### 2. Find this line:
 
 ```bash
-GRUB_DISABLE_OS_PROBER=true
+GRUB_DISABLE_OS_PROBER
 ```
 
 Change it to:
