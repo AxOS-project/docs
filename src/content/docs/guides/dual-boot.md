@@ -109,7 +109,7 @@ We’ve now created two partitions.
 
 ## Step 5: Mount the Partitions
 
-### Mount the Root Partition:
+### Mount the Root Partition (Linux filesystem):
 
 ```bash
 sudo mount /dev/nvme0n1p2 /mnt
@@ -122,7 +122,7 @@ sudo mkdir -p /mnt/boot/efi
 sudo mount /dev/nvme0n1p1 /mnt/boot/efi
 ```
 
-**Adjust disk and partition names and numbers as needed.**
+> **Adjust disk and partition names and numbers as needed.**
 
 Now we’re ready to launch the installer.
 
@@ -148,7 +148,7 @@ Now we’re ready to launch the installer.
 4. Continue through the installer
 5. Once installation finishes, reboot
 
-**Adjust disk and partition names and numbers as needed.**
+> **Adjust disk and partition names and numbers as needed.**
 
 ## Step 8: Configure GRUB to Detect Windows
 
