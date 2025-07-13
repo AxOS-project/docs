@@ -192,18 +192,25 @@ show = [
 
 #### `[compositor]`
 
-Manages transparency, shadows, and performance.
+Manages the theom compositor (picom).
 
 ```toml
 [compositor]
-compositing = true
+compositing = true # Enables the compositor (false disables it)
 compositing_mode = "performance"
+animations = "basic"
 ```
 
-- Modes:
+- Compositing Modes:
 
   - `performance`: Faster, lighter (recommended)
   - `compatibility`: Heavier but reduces glitches (for VMs, etc.)
+
+- Animation Modes:
+
+  - `none`: No animations, lightest, fastest
+  - `basic`: Minimal animations, fast (default)
+  - `fancy`: Fancy animations, quite heavy
 
 #### `[osd]`
 
