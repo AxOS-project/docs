@@ -1,5 +1,5 @@
 ---
-title: Dual boot tutorial
+title: Dual boot
 description: How do do a dual boot with Windows (or any other OS)
 ---
 
@@ -12,14 +12,13 @@ How to do a full **dual boot installation** with **Windows 11** and **AxOS** (Wi
 
 ## Step 0: Before You Begin
 
-> I will **skip the steps** for flashing AxOS to a USB. Please make sure you’ve already created a **bootable USB**.
+> I will **skip the steps** for flashing AxOS to a USB. Please make sure you’ve already created a **bootable USB** by following [this guide](https://www.axos-project.com/docs/get-started/installation/#create-the-installation-media).
 
-
-## Step 1: Create Free Space on Your Disk (Windows)
+## Step 1: Create Free Space on Your Disk
 
 We need to shrink an existing partition to make room for AxOS.
 
-### Instructions:
+### Windows
 
 1. Press `Win + X` → choose **Disk Management**
    *or*
@@ -31,6 +30,17 @@ We need to shrink an existing partition to make room for AxOS.
    * Click **"Shrink"**
 
 This will create **unallocated space** which we’ll use to install AxOS.
+
+### Linux
+
+1. Open a terminal.
+2. Type in `lsblk -f` to see all the partitions.
+3. In the `lsblk -f` output:
+   * Decide what partition you want to shrink.
+   * You can choose the root partition (/) to make room for AxOS.
+4. You’ll need to shrink the partition using a Live USB and a tool like **GParted**.
+
+→ Don’t worry, we cover this in more detail in [Step 4](#step-4-create-partitions-with-gdisk).
 
 
 ## Step 2: Boot into AxOS from USB
