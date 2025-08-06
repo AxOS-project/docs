@@ -16,6 +16,7 @@ description: A list of known issues in AxOS.
 - [Blank cheatsheet issue in sleex](#blank-cheatsheet-issue-in-sleex)
 - [Resolution issue in sleex](#resolution-issue-in-sleex)
 - [Greyed out next button in locale screen in AxOS installer](#greyed-out-next-button-in-locale-screen-in-axos-installer)
+- [Greeter asking for live user password](#greeter-asking-for-live-user-password)
 
 ### Invalid or corrupted packages
 
@@ -86,6 +87,14 @@ This happens because the locale that you selected is not installed in the system
 To fix this, edit `/etc/locale.gen` and uncomment the locale that you want. Then, run `locale-gen` in a terminal to install locale that you want.
 
 If you don't want this method, then you can select another locale that is installed on the system.
+
+### Greeter asking for live user password
+
+> <p style="color: cyan; font-weight: bold;">NOTE</p>
+>
+> This is not an AxOS issue.
+
+If you see the installer asking for live user password, it means that you are trying to run AxOS in Vbox or Vmware. They don't play well with AxOS so it is recommended to use either Qemu or HyperV.
 
 ### Report an issue
 
