@@ -7,16 +7,14 @@ AxOS has 4 default desktops. Learn more about them in this reference page.
 
 ## Sleex
 
-Sleex (based on hte Hyprland compositor) is the third and primary desktop environment for AxOS. It is the most aesthetic and feature-rich desktop environment of the 3. It has a lot of features, smooth animations and a lot of cool stuff, but it is also the least stable.
+Sleex (based on hte Hyprland compositor) is the third and primary desktop environment for AxOS. It is the most aesthetic and feature-rich desktop environment of the 3. It has a lot of features, smooth animations and a lot of cool stuff.
 
-Like Calla, it is a tiling window manager, so you can manage your windows with a keyboard. It is also better if used with keybindings, so you can manage your windows with a keyboard. You can find them by pressing `Super + F1`. If you need, you can change some settings (including keybindings) by editing files in `.config/hypr/hyprland/` folder. You can change the wallpaper by pressing `Super + T`.
+It is a tiling window manager, so you can manage your windows with a keyboard. It is also recommended to use keybindings for a better experience and productivity. You can find them by pressing `Super + F1`. A settings app is included, and can be opened either by pressing `Super + I` or by clicking the gear button on the dashboard.
 
-**By default, the keyboard layout is set to US QWERTY, no matter what you chosed in the installation. You can change it by editing the `.config/hypr/custom/general.conf` file according to `.config/hypr/hyprland/general.conf`**. Note that if you edit the files in the `hyprland` directory, the settings will be reset in the next update.
-
-![Sleex](../../../assets/desktops/sleex1.png)
-![Sleex](../../../assets/dashboard/sleex_dashboard.gif)
-![Sleex](../../../assets/desktops/sleex3.png)
-![Sleex](../../../assets/desktops/sleex4.gif)
+<video width="100%" height="auto" controls>
+  <source src="/docs/assets/desktops/sleex.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
 
 | Pros               | Cons                           |
 | ------------------ | ------------------------------ |
@@ -32,7 +30,7 @@ Plasma (or KDE Plasma) is the first desktop environment for AxOS. It is a powerf
 
 As it is a very known and active desktop environement, you can find everything you need on Internet.
 
-![Plasma](../../../assets/desktops/plasma1.png)
+![Plasma](/docs/assets/desktops/plasma1.png)
 
 | Pros              | Cons                                |
 | ----------------- | ----------------------------------- |
@@ -47,7 +45,7 @@ Calla (made by [Stardust-kyun](https://github.com/Stardust-kyun)) is the second 
 
 Calla is a tiling window manager, so you can manage your windows with a keyboard. It is also better if used with keybindings, so you can manage your windows with a keyboard. You can find them by pressing `Super + F1`. If you need, you can change some settings (including keybindings) by editing the `/usr/share/calla/desktop/config/bind.lua` file.
 
-![Calla](../../../assets/desktops/calla.png)
+![Calla](/docs/assets/desktops/calla.png)
 
 | Pros               | Cons                              |
 | ------------------ | --------------------------------- |
@@ -61,11 +59,11 @@ Theom is the fourth desktop enviornment for AxOS. It is made for ease of use, mi
 
 Theom is based on the i3 window manager, so you can control it with a keyboard. You can view the keybindings at [theom documentaiton page](https://www.axos-project.com/docs/guides/theom/) or by using the `cheetsheet` which you can open by pressing `Super + F1`. You can customise theom by editing the `~/.config/theom/config.toml` file but it is better to use the `theom settings` application instead. You can view your system specs and other information via `theom dashboard`. You can open it by pressing `Super + Shift + D`
 
-![Theom](../../../assets/desktops/theom1.png)
-![Theom](../../../assets/desktops/theom2.png)
-![Theom](../../../assets/desktops/theom3.png)
-![Theom](../../../assets/desktops/theom4.png)
-![Theom](../../../assets/desktops/theom5.png)
+![Theom](/docs/assets/desktops/theom1.png)
+![Theom](/docs/assets/desktops/theom2.png)
+![Theom](/docs/assets/desktops/theom3.png)
+![Theom](/docs/assets/desktops/theom4.png)
+![Theom](/docs/assets/desktops/theom5.png)
 
 | Pros               | Cons                                       |
 | ------------------ | ------------------------------------------ |

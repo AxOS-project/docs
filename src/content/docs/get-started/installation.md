@@ -73,60 +73,60 @@ If you have the installation media ready, you can start the installation.
 You should now boot to the live AxOS environment. The live environment is a testing environment, so you can try AxOS without having to install it. By default, the live environment is the **Sleex** desktop environment.
 
 You should now see this screen (or very similar).
-![Grub Boot Menu](../../../assets/installer/boot.png)
+![Grub Boot Menu](/docs/assets/installer/boot.png)
 
 ## Install AxOS
 
 Are you ready to install AxOS? Great! The install app should automatically start, otherwise you can find it in the app menu with the name **Install AxOS**. This app will guide you through the installation process. Use the super key (Windows key) to activate the search menu if needed.
-![Install App](../../../assets/installer/install1-1.png)
+![Install App](/docs/assets/installer/install1-1.png)
 
 ### Step-1: Choosing layout
 
 Choose your preferred keyboard layout.
 
-![Select Keyboard](../../../assets/installer/install2-1.png)
+![Select Keyboard](/docs/assets/installer/install2-1.png)
 
 ### Step-2: Time zone
 
 Select your timezone.
 
-![Select timezone](../../../assets/installer/install4-1.png)
+![Select timezone](/docs/assets/installer/install4-1.png)
 
 ### Step-3: Locale and date
 
 Set the system locale and date settings ([beware of this issue](https://www.axos-project.com/docs/reference/issues/#greyed-out-next-button-in-locale-screen-in-axos-installer)).
 
-![Select locale](../../../assets/installer/install5-1.png)
+![Select locale](/docs/assets/installer/install5-1.png)
 
 ### Step-4: Creating user account
 
 Create user account with username, password, and admin rights.
 
-![Create User](../../../assets/installer/users-1.png)
+![Create User](/docs/assets/installer/users-1.png)
 
 ### Step-5: Choose your desktop
 
 Choose your desktop between Plasma, Calla, Theom or Sleex. See what they are [in the dedicated desktops tab](/docs/reference/desktops/)
 
-![Select Desktop](../../../assets/installer/install7-1.png)
+![Select Desktop](/docs/assets/installer/install7-1.png)
 
 ### Step-6: Kernel
 
 Choose between Linux or Linux-zen kernel. The Linux kernel aims for stability and the zen focuses on the performances, but is less stable.
 
-![Select kernel](../../../assets/installer/install8-1.png)
+![Select kernel](/docs/assets/installer/install8-1.png)
 
 ### Step-7: Drivers, Optional packages, Swap
 
 Configure NVidia drivers, optional app packages and your desired swap size(screenshot outdated).
 
-![Select Misc](../../../assets/installer/install9-1.png)
+![Select Misc](/docs/assets/installer/install9-1.png)
 
 ### Step-7: Installation disk and partitioning
 
 Choose installation disk and partitioning method.
 
-![Select Misc](../../../assets/installer/disk-1-1.png)
+![Select Misc](/docs/assets/installer/disk-1-1.png)
 
 ### Step-8: Validation
 

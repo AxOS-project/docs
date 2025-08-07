@@ -9,14 +9,16 @@ description: A list of known issues in AxOS.
 
 ### Contents
 
+- [Contents](#contents)
 - [Invalid or corrupted packages](#invalid-or-corrupted-packages)
 - [Mouse cursor is getting bigger in Plasma](#mouse-cursor-is-getting-bigger-in-plasma)
-- [Can't login to Sleex](#cant-login-to-sleex)
 - [Can't boot: /dev/disk/by-label' device did not show up after 30 seconds...](#cant-boot-devdiskby-label-device-did-not-show-up-after-30-seconds)
 - [Blank cheatsheet issue in sleex](#blank-cheatsheet-issue-in-sleex)
 - [Resolution issue in sleex](#resolution-issue-in-sleex)
 - [Greyed out next button in locale screen in AxOS installer](#greyed-out-next-button-in-locale-screen-in-axos-installer)
 - [Greeter asking for live user password](#greeter-asking-for-live-user-password)
+- [Can't screenshare on Sleex](#cant-screenshare-on-sleex)
+- [Report an issue](#report-an-issue)
 
 ### Invalid or corrupted packages
 
@@ -34,29 +36,6 @@ Then, you can try to install the package again. If it still doesn't work, you ca
 ### Mouse cursor is getting bigger in Plasma
 
 You are shaking your mouse, right? That's why the mouse cursor is getting bigger. This is a easter egg from the developers of Plasma. To fix this, you can disable it by switching accessibility > Shake Cursor > Enable.
-
-### Can't login to Sleex
-
-We are talking here about when the login screen logins and then goes back to the login screen.
-
-This is a known issue with the hyprland package. This can happen sometimes when the packagers are updating the libraries. I cannot provide a fix for this, but there are two options for you:
-
-1. Wait for the packagers to fix the issue. This can take some time, so be patient.
-2. open the TTY (`Ctrl + Alt + F3`) and login with your username and password. Then, you can run the following command to start the Sleex desktop environment:
-
-```bash
-# run the sleex command to see what library is missing
-sleex
-```
-
-Then, you can run the following command:
-
-```bash
-# if the missing library is libhyprutils.so.X (X is the version number)
-sudo ln -sf /usr/lib/libhyprutils.so.X /usr/lib/libhyprutils.so.Y # Where Y is an older / newer version of the library
-```
-
-This is a temporary fix, like putting a band-aid on a wound, but it will do the job until the packagers fix the issue.
 
 ### Can't boot: /dev/disk/by-label' device did not show up after 30 seconds...
 
@@ -76,9 +55,15 @@ To fix this issue, you just have to do any of the three things listed below.
 
 ### Resolution issue in sleex
 
-Is your sleex widgets overflowing? It's a known issue in sleex.
+Is your sleex widgets overflowing?
 
-Currently there is no fix for this but the maintainers of sleex are working on fixing this issue.
+Edit the scale of the shell: edit `/usr/share/sleex/shell.qml` and adjust this variable at the top of the file.
+
+```
+//@ pragma Env QT_SCALE_FACTOR=1
+```
+
+The bigger the number is, the bigger the shell will be. After you did that, reboot or relogin.
 
 ### Greyed out next button in locale screen in AxOS installer
 
@@ -95,6 +80,17 @@ If you don't want this method, then you can select another locale that is instal
 > This is not an AxOS issue.
 
 If you see the installer asking for live user password, it means that you are trying to run AxOS in Vbox or Vmware. They don't play well with AxOS so it is recommended to use either Qemu or HyperV.
+
+### Can't screenshare on Sleex
+
+This means your portal is not configured.
+
+1. Edit `/usr/share/xdg-desktop-portal/portals/hyprland.portal` and add Sleex to the list on the last line. It should looks like that:
+   ```
+   UseIn=wlroots;Hyprland;sway;Wayfire;river;Sleex;
+   ```
+2. Restart your portals: `systemctl --user restart xdg-desktop-portal.service`
+3. Check if the hyprland portal is running: `systemctl --user status xdg-desktop-portal-hyprland.service`. If it is, then it should work.
 
 ### Report an issue
 

@@ -16,8 +16,8 @@ export default defineConfig({
         github: "https://github.com/axos-project/",
       },
       logo: {
-        light: "/src/assets/axos-light.svg",
-        dark: "/src/assets/axos-dark.svg",
+        light: "/public/assets/axos-light.svg",
+        dark: "/public/assets/axos-dark.svg",
       },
       sidebar: [
         {
