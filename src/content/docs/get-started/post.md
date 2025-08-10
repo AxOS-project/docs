@@ -26,9 +26,9 @@ Sleex has a graphical configuration app. You can access it by clicking on the **
 
 ### On Theom
 
-Theom has a graphical configuration app. You can open it by searching for **theom-settings** application in the application launcher. The application launcer can be opened by pressing **Super + D**.
+Theom has a graphical configuration app. You can open it by searching for **theom-settings** application in the application launcher. The application launcher can be opened by pressing **Super + D**.
 
-You can configuire theom using the cli as well by editing the `~/.config/theom/config.toml` file.
+You can configure theom using the cli as well by editing the `~/.config/theom/config.toml` file.
 
 ## Install apps and packages
 
