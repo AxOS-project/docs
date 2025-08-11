@@ -7,7 +7,7 @@ AxOS has 4 default desktops. Learn more about them in this reference page.
 
 ## Sleex
 
-Sleex (based on hte Hyprland compositor) is the third and primary desktop environment for AxOS. It is the most aesthetic and feature-rich desktop environment of the 3. It has a lot of features, smooth animations and a lot of cool stuff.
+Sleex (based on the Hyprland compositor) is the third and primary desktop environment for AxOS. It is the most aesthetic and feature-rich desktop environment of the 3. It has a lot of features, smooth animations and a lot of cool stuff.
 
 It is a tiling window manager, so you can manage your windows with a keyboard. It is also recommended to use keybindings for a better experience and productivity. You can find them by pressing `Super + F1`. A settings app is included, and can be opened either by pressing `Super + I` or by clicking the gear button on the dashboard.
 
