@@ -18,7 +18,8 @@ If you don't know about your disk name then you can type and run `lsblk` to know
 
 ### Swap
 Optionally you can have a [swap partition](https://wiki.archlinux.org/title/Swap).
-For systems without hibernation and RAM under 2GB, use 2-3 times your RAM; for 2GB to 8GB of RAM, use RAM size; and for more than 8GB RAM, a swap size of 8GB or less, or even half RAM, is often sufficient, though memory-intensive tasks might require more.
+>For systems without hibernation and RAM under 2GB, use 2-3 times your RAM; for 2GB to 8GB of RAM, use RAM size; and for more than 8GB RAM, a swap size of 8GB or less, or even half RAM, is often sufficient, though memory-intensive tasks might require more.
+
 In simple words if you have lets say 8GB of RAM installed on your machine then your swap partition size should be 8 x 1/2 which is half of 8
 
 If you have 16 GB of RAM on your machine then your swap partition size would be 16 x 1/2 which is 8GB
@@ -29,7 +30,7 @@ Here's an example of a minimal disk setup with swap partition for 16 GB of RAM:
 |           | 8 GB   | Linux Swap |
 | /         |  10 GB | Linux native (ext4 or btrfs are recommended)  |
 
-Always remember that you should **not** mount the swap partition anywhere on the device just leave the mountpoint empty
+> Always remember that you should **not** mount the swap partition anywhere on the device just leave the mountpoint empty
 
 Taking the Windows dual boot example from below with swap your partition table should look like this if you have 8GB of RAM
 | Mountpoint         |  Size  |    FS     |
