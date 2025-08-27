@@ -22,14 +22,14 @@ For systems without hibernation and RAM under 2GB, use 2-3 times your RAM; for 2
 In simple words if you have lets say 8GB of RAM installed on your machine then your swap partition size should be 8 x 1/2 which is half of 8
 
 If you have 16 GB of RAM on your machine then your swap partition size would be 16 x 1/2 which is 8GB
-Here's an example of a minimal disk setup with swap partition for 16 GB of RAM
+Here's an example of a minimal disk setup with swap partition for 16 GB of RAM:
 | Mountpoint|Min Size|      FS       |
 |-----------|--------|---------------|
 | /boot/efi | 250 MB |    FAT32 (or VFAT)      |
 |           | 8 GB   | Linux Swap |
 | /         |  10 GB | Linux native (ext4 or btrfs are recommended)  |
 
-Always remember that you should not mount the **swap partition** anywhere on the device just leave the mountpoint empty
+Always remember that you should **not** mount the swap partition anywhere on the device just leave the mountpoint empty
 
 Taking the Windows dual boot example from below with swap your partition table should look like this if you have 8GB of RAM
 | Mountpoint         |  Size  |    FS     |
