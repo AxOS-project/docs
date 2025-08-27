@@ -4,10 +4,16 @@ description: Options on how to handle disk partitioning
 ---
 
 So, if you are planning on custom partitioning, you probably know what you're doing, so I'll make this pretty short.
-The recommended tool to manually partition your disks is `cfdisk` it's a pretty straight-forward tool to manually setup your disks
+There are several tools you can use to manually partition your disks, depending on your preference:
+- cfdisk - a simple, menu-driven tool that’s easy to navigate.
+- fdisk - more barebones and command-driven, but widely available.
+- parted - supports both MBR and GPT partition tables and can handle larger disks.
+- gparted (GUI) - if you prefer a graphical interface, this one makes it very visual.
 
-To use `cfdisk` you can just open up your terminal and type `sudo cfdisk <your disk to partition i.e /dev/sda or /dev/nvme0n1>`.
-If you don't know about your disk name then you can type and run `lsblk` to know about your disk to partition.
+For example, with `cfdisk`, you can start it by running:
+`sudo cfdisk <your disk, e.g. /dev/sda or /dev/nvme0n1>`
+
+If you don't know your disk name, you can check with `lsblk`.
 
 ### Minimal Requirements to install
 
