@@ -4,6 +4,7 @@ description: Options on how to handle disk partitioning
 ---
 
 So, if you are planning on custom partitioning, you probably know what you're doing, so I'll make this pretty short.
+The recommended tool to manually partition your disks is `cfdisk` it's a pretty straight-forward tool to manually setup your disks
 
 ### Minimal Requirements to install
 
@@ -11,6 +12,9 @@ So, if you are planning on custom partitioning, you probably know what you're do
 |-----------|--------|---------------|
 | /boot/efi | 250 MB |    FAT32 (or VFAT)      |
 | /         |  10 GB | Linux native (ext4 or btrfs are recommended)  |
+
+Optionally you can have a [swap partition](https://wiki.archlinux.org/title/Swap).
+For systems without hibernation and RAM under 2GB, use 2-3 times your RAM; for 2GB to 8GB of RAM, use RAM size; and for more than 8GB RAM, a swap size of 8GB or less, or even half RAM, is often sufficient, though memory-intensive tasks might require more.
 
 Here is an example for windows dual boot on a 500G drive:
 
