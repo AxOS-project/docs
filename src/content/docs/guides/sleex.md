@@ -130,7 +130,10 @@ The settings app is a primary element of Sleex. On It, you can find multiple tab
 - The **Appearence** tab is to configure simple elements such as the wallpaper, the color scheme and the light/dark mode.
 - The **Interface** tab is to configure the sleex shell elements.
 - The **Behavior** tab is to configure some shell backend / system elements.
+- The **Sound** tab is to configure audio inputs/outputs.
 - The **Bluetooth** tab is to configure bluetooth and connect devices.
+- The **Wifi** tab is to configure wifi.
+- The **Display** tab is to configure displays.
 - The **About** tab contains basic infos about AxOS and Sleex.
 
 <video autoPlay muted loop playsInline>
