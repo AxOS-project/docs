@@ -134,6 +134,8 @@ Verify selections and begin installation.
 
 Take a look at the choices you've made, validate everything, and then start the installation. The installer will fetch the latest packages and install them in the selected disk. This process can take a few minutes, depending on the speed of your disk and internet connection.
 
+**Important note:** if you are requested for a password in the live session, this password will be **live**.
+
 ## Conclusion
 
 You have now installed AxOS! You can now reboot your computer and enjoy your new operating system.
