@@ -3,7 +3,7 @@ title: Theom
 description: The fourth desktop environment of AxOS.
 ---
 
-![Theom](/docs/assets/theom4.png)
+![Theom](/docs/assets/desktops/theom4.png)
 
 Theom (based on i3wm) is the fourth desktop environment for AxOS. It is mainly focused on asthetics, customization, and low resource usage.
 
