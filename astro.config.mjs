@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
+import starlightThemeNova from 'starlight-theme-nova';
 
 import tailwind from "@astrojs/tailwind";
 
@@ -10,11 +11,14 @@ export default defineConfig({
   base: "/docs",
   integrations: [
     starlight({
+      plugins: [
+        starlightThemeNova(/* options */),
+      ],
       title: "AxOS Docs",
-      customCss: ["/src/tailwind.css"],
-      social: {
-        github: "https://github.com/axos-project/",
-      },
+      customCss: ["/src/tailwind.css", "./src/styles/custom.css"],
+      social: [
+        { icon: 'github', label: 'GitHub', href: 'https://github.com/axos-project', },
+      ],
       logo: {
         light: "/public/assets/axos-light.svg",
         dark: "/public/assets/axos-dark.svg",
