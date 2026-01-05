@@ -11,57 +11,7 @@ Epsilon fetches packages from the pacman repositories and the AUR, and can insta
 
 Epsilon comes pre-installed on AxOS, so you don't need to install it separately. You can start using it right away.
 
-## Package and Service handling
-
-One speciality of epsilon is that it provides a simple way to handle package and services through manifest files. These files are written in YAML.
-
-Here is an example manifest file:
-
-```yaml
-# Packages from the mirrors
-packages: 
-  install:
-    - vim
-    - alacritty
-  # same effect as packages_aur.remove
-  remove:
-    - nano
-
-# Packages from the aur
-packages_aur:
-  install:
-    - shim-signed
-  # same effect as packages.remove
-  remove:
-    - thunar
-
-# Repsitories to add as mirrors
-repos:
-  axos:
-    siglevel: Optional TrustAll
-    server: https://axos-project.com/AxMirrors/$arch
-
-# Services to enable/disable
-services:
-  enable:
-    - docker
-  disable:
-    - mongod
-```
-
-These files can be applied simply by running the following command:
-
-```bash
-epsi manifest apply <PATH_TO_FILE> [OPTIONS]
-```
-
-Moreover, epsilon can also generate a manifest file from your current system setup which can be used to revert to your old package and service setup in certain scenarios like reinstalling AxOS. 
-
-```bash
-epsi manifest generate <OUTPUT_PATH> [OPTIONS]
-```
-
-## Commands
+## Usage
 
 Epsilon is a command-line tool, and can be used from the terminal. Here are the commands that you can use with Epsilon:
 
@@ -137,6 +87,37 @@ epsi -Syu --with-snapshot --replace-snapshot
 ```
 
 ```bash
+# Generates shell completions for supported shells (bash, fish, elvish, pwsh)
+epsi gencomp <shell>
+epsi -G <shell>
+```
+
+```bash
+# Removes all orphaned packages and clears the package cache
+epsi clean
+epsi -C
+```
+
+```bash
+# Queries for and returns available package updates
+epsi checkupdates
+```
+
+```bash
+# Runs pacdiff (a tool to help merge .pacnew files)
+epsi diff
+epsi -d
+```
+
+```bash
+# Print help
+epsi help
+epsi -h
+```
+
+Manifest commands (see [Package and Service handling](#package-and-service-handling)): 
+
+```bash
 # Apply a manifest
 epsi manifest apply <path/to/file>
 
@@ -170,35 +151,6 @@ epsi manifest generate <path/to/output> --disabled-services <service1> <service2
 epsi manifest generate <path/to/output> -s <service1> <service2> ...
 ```
 
-```bash
-# Generates shell completions for supported shells (bash, fish, elvish, pwsh)
-epsi gencomp <shell>
-epsi -G <shell>
-```
-
-```bash
-# Removes all orphaned packages and clears the package cache
-epsi clean
-epsi -C
-```
-
-```bash
-# Queries for and returns available package updates
-epsi checkupdates
-```
-
-```bash
-# Runs pacdiff (a tool to help merge .pacnew files)
-epsi diff
-epsi -d
-```
-
-```bash
-# Print help
-epsi help
-epsi -h
-```
-
 Flags can also be used:
 
 ```bash
@@ -210,3 +162,43 @@ Flags can also be used:
   -h, --help                 # Print help information
   -V, --version              # Print version information
 ```
+
+## Package and Service handling
+
+One speciality of epsilon is that it provides a simple way to handle package and services through manifest files. These files are written in YAML.
+
+These are all the properties that you can set in the epsilon manifest file:
+
+```yaml
+# Packages from the mirrors
+packages: 
+  install:
+    - vim
+    - alacritty
+  # same effect as packages_aur.remove
+  remove:
+    - nano
+
+# Packages from the aur
+packages_aur:
+  install:
+    - shim-signed
+  # same effect as packages.remove
+  remove:
+    - thunar
+
+# Repsitories to add as mirrors
+repos:
+  axos:
+    siglevel: Optional TrustAll
+    server: https://axos-project.com/AxMirrors/$arch
+
+# Services to enable/disable
+services:
+  enable:
+    - docker
+  disable:
+    - mongod
+```
+
+Manifests can be generated or applied and the commands to do so are listed above in the [usage](#usage) section.
