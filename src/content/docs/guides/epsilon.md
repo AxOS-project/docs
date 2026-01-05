@@ -3,9 +3,9 @@ title: Epsilon
 description: Epsilon is a powerful, lightweight, and easy-to-use package manager for AxOS
 ---
 
-Epsilon (or `epsi`) is a powerful, lightweight, and easy-to-use package manager for AxOS. It is designed to be simple to use, and to provide an easy way to install, update, and remove packages on your system.
+Epsilon (or `epsi`) is a powerful, lightweight, and easy-to-use package manager for AxOS. It is designed to be simple to use, and to provide an easy way to install, update, manage, and remove packages on your system.
 
-Epsilon fetches packages from the pacman repositories and the AUR, and can install packages from both sources. It also provides a simple way to manage your system's packages, and to keep your system up-to-date.
+Epsilon fetches packages from the pacman repositories and the AUR, and can install packages from both sources. It also provides a simple way to manage your system's packages, services, and keep your system up-to-date.
 
 ## Installation
 
@@ -115,6 +115,42 @@ epsi help
 epsi -h
 ```
 
+Manifest commands (see [Package and Service handling](#package-and-service-handling)): 
+
+```bash
+# Apply a manifest
+epsi manifest apply <path/to/file>
+
+# Apply a manifest but reinstall up-to-date packages
+epsi manifest apply <path/to/file> --install-all
+epsi manifest apply <path/to/file> -I
+```
+
+```bash
+# Generate a manifest
+epsi manifest generate <path/to/output>
+
+# Show a JSON form of manifest before writing
+epsi manifest generate <path/to/output> --view-json
+epsi manifest generate <path/to/output> -j
+
+# Only include user installed packages
+epsi manifest generate <path/to/output> --user-installed
+epsi manifest generate <path/to/output> -u
+
+# Include AUR packages too
+epsi manifest generate <path/to/output> --include-aur
+epsi manifest generate <path/to/output> -a
+
+# Set enabled servivces
+epsi manifest generate <path/to/output> --enabled-services <service1> <service2> ...
+epsi manifest generate <path/to/output> -S <service1> <service2> ...
+
+# Set disabled services
+epsi manifest generate <path/to/output> --disabled-services <service1> <service2> ...
+epsi manifest generate <path/to/output> -s <service1> <service2> ...
+```
+
 Flags can also be used:
 
 ```bash
@@ -126,3 +162,43 @@ Flags can also be used:
   -h, --help                 # Print help information
   -V, --version              # Print version information
 ```
+
+## Package and Service handling
+
+One speciality of epsilon is that it provides a simple way to handle package and services through manifest files. These files are written in a serialization language called [YAML](https://en.wikipedia.org/wiki/YAML).
+
+These are all the properties that you can set in the epsilon manifest file:
+
+```yaml
+# Packages from the mirrors
+packages: 
+  install:
+    - vim
+    - alacritty
+  # same effect as packages_aur.remove
+  remove:
+    - nano
+
+# Packages from the aur
+packages_aur:
+  install:
+    - shim-signed
+  # same effect as packages.remove
+  remove:
+    - thunar
+
+# Repsitories to add as mirrors
+repos:
+  axos:
+    siglevel: Optional TrustAll
+    server: https://axos-project.com/AxMirrors/$arch
+
+# Services to enable/disable
+services:
+  enable:
+    - docker
+  disable:
+    - mongod
+```
+
+Manifests can be generated or applied and the commands to do so are listed above in the [usage](#usage) section.
