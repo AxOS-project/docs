@@ -165,7 +165,7 @@ Flags can also be used:
 
 ## Package and Service handling
 
-One speciality of epsilon is that it provides a simple way to handle package and services through manifest files. These files are written in YAML.
+One speciality of epsilon is that it provides a simple way to handle package and services through manifest files. These files are written in a serialization language called [YAML](https://en.wikipedia.org/wiki/YAML).
 
 These are all the properties that you can set in the epsilon manifest file:
 
