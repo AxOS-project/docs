@@ -1,17 +1,17 @@
 ---
-title: Axcontrol
-description: Axcontrol is a powerful, lightweight, and easy-to-use control center for AXOS.
+title: Axctl
+description: Axctl is a powerful, lightweight, and easy-to-use control center for AXOS.
 ---
 
-Axcontrol (or `axctl`) is a powerful tool that gives users more control over their desktop. It is designed to be simple and interact with your device to change properties of your system.
+Axctl is a powerful tool that gives users more control over their desktop. It is designed to be simple and interact with your device to change properties of your system.
 
 ## Installation
 
-Axcontrol comes preinstalled with AXOS so you can use it right away. However if it is not found, you can install it using `epsi install axctl`.
+Axctl comes preinstalled with AXOS so you can use it right away. However if it is not found, you can install it using `epsi install axctl`.
 
 ## Usage
 
-Axcontrol is a command line tool and it should be used from the terminal. These are the commands that you can use with Axcontrol:
+Axctl is a command line tool and it should be used from the terminal. These are the commands that you can use with Axctl:
 
 ```bash
 # Toggle splash screen off/on
@@ -41,6 +41,13 @@ axctl net test # Tests your internet connectivity
 ```bash
 # Get device informations
 axctl device-info
+```
+
+```bash
+# DPMS controls (Display Power Management Signaling)
+axctl dpms <TARGET> <STATE>
+# TARGET can be: `all` or a specific output (e.g. `HDMI-A-1`)
+# STATE can be: `on`, `off`, `1` or `0`
 ```
 
 ```bash

@@ -29,8 +29,16 @@ export default defineConfig({
           autogenerate: { directory: "get-started" },
         },
         {
+          label: "Desktop Environments",
+          autogenerate: { directory: "desktops" },
+        },
+        {
           label: "Guides",
           autogenerate: { directory: "guides" },
+        },
+        {
+          label: "AxOS specific softwares",
+          autogenerate: { directory: "axos-softwares" },
         },
         {
           label: "Reference",

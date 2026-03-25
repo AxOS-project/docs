@@ -115,6 +115,29 @@ epsi help
 epsi -h
 ```
 
+```bash
+# Generate a yaml manifest of the currently installed packages
+epsi manifest generate <output.yaml>
+# Only include explicitly installed packages
+epsi manifest generate -u <output.yaml>
+# Show a JSON form of the manifest before writing
+epsi manifest generate -j <output.yaml>
+# Include AUR Packages in the generated manifest
+epsi manifest generate -a <output.yaml>
+# Include enabled services
+epsi manifest generate -S <output.yaml>
+# Include disabled services
+epsi manifest generate -s <output.yaml>
+```
+
+```bash
+# Apply a manifest
+epsi manifest apply <manifest.yaml>
+# Reinstall up to date packages too
+epsi manifest apply -I <manifest.yaml>
+```
+
+
 Flags can also be used:
 
 ```bash

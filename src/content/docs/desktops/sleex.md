@@ -30,12 +30,11 @@ epsi install sleex
 
 You can also install it with pacman.
 
-**To install Sleex on another arch-based os, follow the instructions on the README of the [github page](https://github.com/AxOS-project/Sleex/tree/main?tab=readme-ov-file#cross-distro).**
-
+**If you use another arch-based distribution**, you can install the `sleex-git` package from the AUR using your favorite AUR helper.
 
 ## Keybinds
 
-Sleex is a tiling window manager, so it is recommended to use it with a keyboard. You can find every keybinds by pressing `Super + F1`. If you need, you can add keybinds in the `~/.config/hypr/custom/keybinds.conf` file. The configuration method can be found in the [Hyprland documentation](https://wiki.hyprland.org/Configuring/Binds/)
+Sleex uses Hyprland, a tiling window manager, so it is recommended to use it with a keyboard. You can find every keybinds by pressing `Super + F1`. If you need, you can add keybinds in the `~/.config/hypr/custom/keybinds.conf` file. The configuration method can be found in the [Hyprland documentation](https://wiki.hyprland.org/Configuring/Binds/)
 
 ## Widgets
 
@@ -114,6 +113,12 @@ On the desktop, you can find:
 - A desktop clock, that can be moved, toggled and themed (dark or light) in the settings app.
 - A random quote at the bottom left, that can be toggled in the settings app.
 
+You can right click on the desktop to open the desktop menu, where there are multiple options:
+- Show desktop icons: shows or hides the icons on the desktop (from the `~/Desktop` folder or your equivalent xdg desktop directory).
+- Sleex settings: opens the settings app.
+- Open terminal: opens a terminal in the current desktop.
+- Logout: show the session logout menu.
+
 <video autoPlay muted loop playsInline controls>
   <source src="/docs/assets/sleex/desktop_clock.mp4" type="video/mp4" />
   Your browser is from 1998 and doesn't support video.
@@ -164,6 +169,7 @@ The settings app is a primary element of Sleex. On It, you can find multiple tab
 - The **Sound** tab is to configure audio inputs/outputs.
 - The **Bluetooth** tab is to configure bluetooth and connect devices.
 - The **Wifi** tab is to configure wifi.
+- The **Applications** tab is to configure default applications and app associations.
 - The **Display** tab is to configure displays.
 - The **Privacy** tab is to configure privacy-related options such as location services, AI policy etc.
 - The **About** tab contains basic infos about AxOS and Sleex.
@@ -183,4 +189,4 @@ You want to contribute to the developement of Sleex? Cool! here are some things 
 - The code of the sleex shell is located in `/usr/share/sleex/`. You can also find it on the github repository: [Sleex](https://github.com/AxOS-project/sleex)
 - The Sleex interface and widgets are made with [Quickshell](https://quickshell.org/).
 
-Pull requests are really appreciated! If you have any question, you can ask them on the [AxOS Discord server](https://discord.com/invite/xQdtDBFmsy).
+Pull requests are really appreciated! If you have any question, you can ask them on the [AxOS Discord server](https://discord.com/invite/xQdtDBFmsy), on the [discussions of the Sleex repository](https://github.com/AxOS-project/sleex/discussions) or by email at [ardox@axos-project.com](mailto:ardox@axos-project.com)

@@ -57,13 +57,10 @@ To fix this issue, you just have to do any of the three things listed below.
 
 Is your sleex widgets overflowing?
 
-Edit the scale of the shell: edit `/usr/share/sleex/shell.qml` and adjust this variable at the top of the file.
+Edit the scale of the monitor in the display settings. If you are using a 4K monitor, you can set the scale to 200%. If you are using a 1440p monitor, you can set the scale to 125% or 150%. If you are using a 1080p monitor, you can set the scale to 100%, and if you are using a 720p monitor, you can set the scale to 75%.
 
-```
-//@ pragma Env QT_SCALE_FACTOR=1
-```
+These are just examples, you can set the scale to whatever you want.
 
-The bigger the number is, the bigger the shell will be. After you did that, reboot or relogin.
 
 ### Greyed out next button in locale screen in AxOS installer
 

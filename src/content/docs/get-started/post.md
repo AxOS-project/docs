@@ -22,8 +22,6 @@ some elements of Calla itself. You can access it by clicking the **gear** icon i
 
 Sleex has a graphical configuration app. You can access it by clicking on the **Settings** icon in the right panel, by pressing **Super + I** or by searching for **Settings** in the app menu.
 
-> Note that some elements of the app (such as the wallpaper) are not working because it uses the GNOME library. It will be fixed in the future.
-
 ### On Theom
 
 Theom has a graphical configuration app. You can open it by searching for **theom-settings** application in the application launcher. The application launcher can be opened by pressing **Super + D**.
@@ -32,35 +30,9 @@ You can configure theom using the cli as well by editing the `~/.config/theom/co
 
 ## Install apps and packages
 
-### Discover (Plasma only)
-
-Discover is the graphical app to install apps and packages. You can access it by clicking on the **Discover** icon in the app menu.
-
 ### Epsilon
 
 Epsilon (`epsi`) is the package manager for AxOS. You can manage your packages by using the `epsi` command:
-
-```bash
-# Install a package
-epsi install package1 package2 package3
-epsi i package1 package2 package3
-epsi -S package1 package2 package3
-epsi sync package1 package2 package3
-
-# Remove a package
-epsi remove package1 package2 package3
-epsi rm package1 package2 package3
-epsi -R package1 package2 package3
-
-# Search for a package
-epsi search package1 package2 package3
-epsi -Ss package1 package2 package3
-
-# Refresh repositories and update the package database
-epsi sync
-epsi -y
-epsi sy
-```
 
 You can find the usage of the command by running `epsi --help` or `epsi -h`. More infos on [Epsilon's guide](/docs/guides/epsilon).
 
@@ -72,3 +44,7 @@ Pacman is the package manager for Arch Linux. It is the same package manager as 
 You can manage your packages by using the `pacman` command. You can find the usage of the command in the [Arch Linux documentation](https://wiki.archlinux.org/title/Pacman).
 
 This option is also a safe way, but it will not search in the AUR, so you will possibly not find all the packages you want.
+
+### Discover (Plasma only)
+
+Discover is the graphical app to install apps and packages. You can access it by clicking on the **Discover** icon in the app menu.
