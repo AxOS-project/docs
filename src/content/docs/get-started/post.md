@@ -13,11 +13,6 @@ Each desktop environment has its own configuration.
 
 Plasma has a graphical configuration tool called **System Settings**. You can access it by clicking on the **System Settings** icon in the app menu.
 
-### On Calla
-
-Calla has no graphical configuration tool for the system itself. You should therefore use the command line to configure your system. However, there is an app to configure
-some elements of Calla itself. You can access it by clicking the **gear** icon in the app menu.
-
 ### On Sleex
 
 Sleex has a graphical configuration app. You can access it by clicking on the **Settings** icon in the right panel, by pressing **Super + I** or by searching for **Settings** in the app menu.

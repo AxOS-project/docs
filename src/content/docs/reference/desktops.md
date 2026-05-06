@@ -39,20 +39,6 @@ As it is a very known and active desktop environement, you can find everything y
 | Stable            |                                     |
 | User-friendly     |                                     |
 
-## Calla
-
-Calla (made by [Stardust-kyun](https://github.com/Stardust-kyun)) is the second desktop environment for AxOS. It is a lightweight and resource efficient desktop environment.
-
-Calla is a tiling window manager, so you can manage your windows with a keyboard. It is also better if used with keybindings, so you can manage your windows with a keyboard. You can find them by pressing `Super + F1`. If you need, you can change some settings (including keybindings) by editing the `/usr/share/calla/desktop/config/bind.lua` file.
-
-![Calla](/docs/assets/desktops/calla.png)
-
-| Pros               | Cons                              |
-| ------------------ | --------------------------------- |
-| Lightweight        | Hard to (fully) use               |
-| Tiling             | Less stable than Plasma           |
-| Resource-efficient | Less features than other desktops |
-
 ## Theom
 
 Theom is the fourth desktop environment for AxOS. It is made for ease of use, minimalism and customisability.

@@ -9,18 +9,18 @@ So, you are ready to install AxOS? Great! This guide will help you to install Ax
 
 ### Required
 
-| Component  | Plasma          | Calla           | Sleex           | Theom           |
-| ---------- | --------------- | --------------- | --------------- | --------------- |
-| CPU        | 64-bit (x86_64) | 64-bit (x86_64) | 64-bit (x86_64) | 64-bit (x86_64) |
-| RAM        | 4GB             | 2GB             | 4GB             | 2GB             |
-| Disk Space | 10GB            | 10GB            | 10GB            | 10GB            |
+| Component  | Plasma          | Sleex           | Theom           |
+| ---------- | --------------- | --------------- | --------------- |
+| CPU        | 64-bit (x86_64) | 64-bit (x86_64) | 64-bit (x86_64) |
+| RAM        | 4GB             | 4GB             | 2GB             |
+| Disk Space | 10GB            | 10GB            | 10GB            |
 
 ### Recommended
 
-| Component  | Plasma | Calla | Sleex | Theom |
-| ---------- | ------ | ----- | ----- | ----- |
-| RAM        | 8GB    | 4GB   | 8GB   | 4GB   |
-| Disk Space | 50GB   | 20GB  | 40GB  | 20GB  |
+| Component  | Plasma | Sleex | Theom |
+| ---------- | ------ | ----- | ----- |
+| RAM        | 8GB    | 8GB   | 4GB   |
+| Disk Space | 50GB   | 40GB  | 20GB  |
 
 <br />
 
@@ -106,7 +106,7 @@ Create user account with username, password, and admin rights.
 
 ### Step-5: Choose your desktop
 
-Choose your desktop between Plasma, Calla, Theom or Sleex. See what they are [in the dedicated desktops tab](/docs/reference/desktops/)
+Choose your desktop between Sleex, Theom or Plasma. See what they are [in the dedicated desktops tab](/docs/reference/desktops/)
 
 ![Select Desktop](/docs/assets/installer/install7-1.png)
 

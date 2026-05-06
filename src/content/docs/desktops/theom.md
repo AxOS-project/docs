@@ -27,7 +27,7 @@ If you are on some other operating system other than AxOS, read our [Porting to 
 
 ## Keybindings
 
-Just like Sleex and Calla, it is a tiling window manager. So you can control almost everything with your keyboard. You can find all the default keybindings in the cheetsheet which can be opened by pressing `Mod + F1` (Where `mod` being the windows key). If needed, you can even modify/add new keybindings in the `~/.config/theom/keybindings.conf` file. The configuration syntax can be found in the [i3wm Keybinding Documentation](https://i3wm.org/docs/userguide.html#keybindings).
+Just like Sleex, it is a tiling window manager. So you can control almost everything with your keyboard. You can find all the default keybindings in the cheetsheet which can be opened by pressing `Mod + F1` (Where `mod` being the windows key). If needed, you can even modify/add new keybindings in the `~/.config/theom/keybindings.conf` file. The configuration syntax can be found in the [i3wm Keybinding Documentation](https://i3wm.org/docs/userguide.html#keybindings).
 
 ## Configuring Theom
 
