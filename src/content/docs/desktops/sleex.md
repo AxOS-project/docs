@@ -3,14 +3,14 @@ title: Sleex
 description: The third desktop environement for AxOS.
 ---
 
-![Sleex](/docs/assets/sleex.png)
+![Sleex](/assets/sleex.png)
 
 Sleex (based on the Hyprland compositor) is the third desktop environment for AxOS. It is the most aesthetic and feature-rich desktop environment of the 3. It has a lot of features, smooth animations and a lot of cool stuff.
 
 In this page, you will learn how to use Sleex, how to customize it and how to fix some common issues.
 
 <video width="100%" height="auto" controls>
-  <source src="/docs/assets/desktops/sleex.mp4" type="video/mp4" />
+  <source src="/assets/desktops/sleex.mp4" type="video/mp4" />
   Your browser does not support the video tag.
 </video>
 
@@ -45,7 +45,7 @@ Sleex has a built-in widget system. You can add, remove and change the code of t
 The bar is the top bar of Sleex. Several modules can be found on it.
 
 <video autoPlay muted loop playsInline controls>
-  <source src="/docs/assets/sleex/bar.mp4" type="video/mp4" />
+  <source src="/assets/sleex/bar.mp4" type="video/mp4" />
   Your browser is from 1998 and doesn't support video.
 </video>
 
@@ -63,7 +63,7 @@ The bar is the top bar of Sleex. Several modules can be found on it.
 The dashboard is a widget with several modules. You can open it by clicking on the right side of the bar, or by pressing `Super + D`.
 
 <video autoPlay muted loop playsInline controls>
-  <source src="/docs/assets/sleex/dash.mp4" type="video/mp4" />
+  <source src="/assets/sleex/dash.mp4" type="video/mp4" />
   Your browser is from 1998 and doesn't support video.
 </video>
 
@@ -120,7 +120,7 @@ You can right click on the desktop to open the desktop menu, where there are mul
 - Logout: show the session logout menu.
 
 <video autoPlay muted loop playsInline controls>
-  <source src="/docs/assets/sleex/desktop_clock.mp4" type="video/mp4" />
+  <source src="/assets/sleex/desktop_clock.mp4" type="video/mp4" />
   Your browser is from 1998 and doesn't support video.
 </video>
 
@@ -133,7 +133,7 @@ The dock is a widget where you can pin apps to access them rapidely.
 When an app is open, the icon shows at the right of it. If you right click on it, the app will be pined and will be there even if it is not opened.
 
 <video autoPlay muted loop playsInline controls>
-  <source src="/docs/assets/sleex/dock.mp4" type="video/mp4" />
+  <source src="/assets/sleex/dock.mp4" type="video/mp4" />
   Your browser is from 1998 and doesn't support video.
 </video>
 
@@ -154,7 +154,7 @@ Results can include:
 - (prefix with `:`) Emojis
 
 <video autoPlay muted loop playsInline controls>
-  <source src="/docs/assets/sleex/overview.mp4" type="video/mp4" />
+  <source src="/assets/sleex/overview.mp4" type="video/mp4" />
   Your browser is from 1998 and doesn't support video.
 </video>
 
@@ -175,7 +175,7 @@ The settings app is a primary element of Sleex. On It, you can find multiple tab
 - The **About** tab contains basic infos about AxOS and Sleex.
 
 <video autoPlay muted loop playsInline controls>
-  <source src="/docs/assets/sleex/settings.mp4" type="video/mp4" />
+  <source src="/assets/sleex/settings.mp4" type="video/mp4" />
   Your browser is from 1998 and doesn't support video.
 </video>
 

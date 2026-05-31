@@ -29,7 +29,7 @@ You can configure theom using the cli as well by editing the `~/.config/theom/co
 
 Epsilon (`epsi`) is the package manager for AxOS. You can manage your packages by using the `epsi` command:
 
-You can find the usage of the command by running `epsi --help` or `epsi -h`. More infos on [Epsilon's guide](/docs/guides/epsilon).
+You can find the usage of the command by running `epsi --help` or `epsi -h`. More infos on [Epsilon's guide](/guides/epsilon).
 
 Epsilon has a lot more packages than the other package managers, as it also searches in the AUR (Arch User Repository).
 

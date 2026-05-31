@@ -7,12 +7,12 @@ description: How do do a dual boot with Windows (or any other OS)
 
 How to do a full **dual boot installation** with **Windows 11** and **AxOS** (Windows 10 should work as well).
 
-> **System Requirements**: [Check here](https://www.axos-project.com/docs/get-started/installation/#required)
+> **System Requirements**: [Check here](https://docs.axos-project.com/get-started/installation/#required)
 > Minimum disk space: **10 GB** (but **50 GB or more is strongly recommended** for a smoother experience)
 
 ## Step 0: Before You Begin
 
-> I will **skip the steps** for flashing AxOS to a USB. Please make sure you’ve already created a **bootable USB** by following [this guide](https://www.axos-project.com/docs/get-started/installation/#create-the-installation-media).
+> I will **skip the steps** for flashing AxOS to a USB. Please make sure you’ve already created a **bootable USB** by following [this guide](https://docs.axos-project.com/get-started/installation/#create-the-installation-media).
 
 ## Step 1: Create Free Space on Your Disk
 
